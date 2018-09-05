@@ -1,0 +1,19 @@
+footer {
+    height: 100px;
+    padding: 1rem 2rem;
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .footer__box {
+        flex: 1;
+        font-size: 1.2rem;
+    }
+    .footer__box:first-child {
+        text-align: left;
+    }
+    .footer__box:last-child {
+        text-align: right;
+    }
+}

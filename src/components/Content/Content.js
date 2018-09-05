@@ -1,0 +1,42 @@
+import React from 'react'
+import './Content.scss'
+import Tile from '../Tile/Tile'
+
+const content = ( props ) => {
+    return (
+        <div className="content">
+            <div className="tileGrid">
+                <Tile
+                    icon="lightbulb"
+                    color="var(--color-sky)"
+                    title="What is Helium?"
+                    body="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos enim, eligendi, cumque fugiat dolore eveniet doloremque, quam cupiditate modi architecto alias laborum. Modi quasi dignissimos dolor, culpa molestiae a doloribus." />
+                <Tile
+                    icon="flask"
+                    color="var(--color-tan)"
+                    title="Demos"
+                    body="Lorem ipsum dolor sit amet est commodi quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa assumenda repellat possimus molestiae, veniam necessitatibus quos quasi, sed esse. Molestias nihil deleniti magni voluptas, veritatis laudantium possimus amet maiores at!" />
+                <Tile
+                    icon="book"
+                    color="var(--color-lilac)"
+                    title="Documentation"
+                    body="Lorem ipsum dolor sit ametsint, accusamus quas molestiae, provident saepe nostrum similique, eos veniam tempora porro cumque itaque in odio qui laborum modi, labore repudiandae." />
+            </div>
+
+            <div className="horizontalRule"></div>
+
+            <div className="resources">
+                <h2>Resources</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates harum saepe ad. Magni exercitationem expedita, neque eveniet id totam et, ea est aliquam in quisquam voluptatem unde, ipsum temporibus?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates harum saepe ad. Magni exercitationem expedita, neque eveniet id totam et, ea est aliquam in quisquam voluptatem unde, ipsum temporibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates harum saepe ad. Magni exercitationem expedita, neque eveniet id totam et, ea est aliquam in quisquam voluptatem unde, ipsum temporibus?
+                </p>
+            </div>
+
+        </div>
+    )
+}
+
+export default content

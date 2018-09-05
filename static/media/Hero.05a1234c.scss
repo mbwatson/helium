@@ -1,0 +1,21 @@
+.hero {
+    background-size: cover;
+    height: 40vh;
+    min-height: 450px;
+    background-color: var(--color-midnight);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--color-pearl);
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    p {
+        color: var(--color-tin);
+        width: 50vw;
+        font-size: 1.15rem;
+        line-height: 1.5;
+    }
+}

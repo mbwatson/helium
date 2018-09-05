@@ -1,0 +1,15 @@
+.content {
+    margin: 3rem;
+    .tileGrid {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 600px) { flex-direction: row; }
+        justify-content: space-around;
+        a {
+            text-decoration: underline;
+        }
+    }
+    .resources {
+        margin-bottom: 4rem;
+    }
+}

@@ -6,10 +6,10 @@ import Content from '../../components/Content/Content'
 import './App.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faFlask, faLightbulb, faBook } from '@fortawesome/free-solid-svg-icons'
+import { faRocket, faFlask, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(faFlask, faLightbulb, faBook, fab)
 
+library.add(faRocket, faFlask, faUsers, fab)
 
 class App extends Component {
     render() {

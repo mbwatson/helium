@@ -14,7 +14,7 @@ const footer = ( props ) => {
                 </a>
             </div>
             <div className="footer__box">
-                <a href="#"><FontAwesomeIcon icon={ ['fab', 'github'] } /> GitHub</a>
+                View our Documentation on <a href="#"><FontAwesomeIcon icon={ ['fab', 'github'] } /> GitHub</a>
             </div>
         </footer>
     )

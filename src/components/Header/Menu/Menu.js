@@ -22,6 +22,7 @@ class Menu extends Component {
                 <nav>
                     <a href="#">About</a>
                     <a href="#">Overview</a>
+                    <a href="#">Demos</a>
                     <a href="#">Team</a>
                     <a href="#">Contact</a>
                 </nav>

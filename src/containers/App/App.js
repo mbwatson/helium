@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import HomePage from './pages/Home'
 import AboutPage from './pages/About'
@@ -20,7 +20,8 @@ class App extends Component {
         return (
             <Layout>
                 <Switch>
-                    <Route exact path='/' component={ HomePage }/>
+                    <Route exact path='/' render={ () => <Redirect to="/home" /> }/>
+                    <Route path='/home' component={ HomePage }/>
                     <Route path='/about' component={ AboutPage }/>
                     <Route path='/demos' component={ DemosPage }/>
                     <Route path='/team' component={ TeamPage }/>

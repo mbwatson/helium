@@ -19,11 +19,11 @@ class App extends Component {
     render() {
         return (
             <Layout>
-                <Route exact path='/' component={ HomePage }/>
-                <Route exact path='/about' component={ AboutPage }/>
-                <Route exact path='/demos' component={ DemosPage }/>
-                <Route exact path='/team' component={ TeamPage }/>
-                <Route exact path='/contact' component={ ContactPage }/>
+                <Route exact path='/helium' component={ HomePage }/>
+                <Route exact path='/helium/about' component={ AboutPage }/>
+                <Route exact path='/helium/demos' component={ DemosPage }/>
+                <Route exact path='/helium/team' component={ TeamPage }/>
+                <Route exact path='/helium/contact' component={ ContactPage }/>
             </Layout>
         );
     }

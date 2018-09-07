@@ -9,12 +9,13 @@ const footer = ( props ) => {
     return (
         <footer>
             <div className="footer__box">
-                <a href="#">
+                <a href="https://nihdatacommons.us/" target="_blank">
                     <img src={ dcppcLogo } alt="DCPPC Logo" />
                 </a>
             </div>
             <div className="footer__box">
-                View our Documentation on <a href="#"><FontAwesomeIcon icon={ ['fab', 'github'] } /> GitHub</a>
+                View our Documentation on
+                <a href="https://github.com/dcppc/dcppc-phase1-demos/blob/master/demo-list.rst" target="_blank"><FontAwesomeIcon icon={ ['fab', 'github'] } /> GitHub</a>
             </div>
         </footer>
     )

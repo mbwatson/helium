@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Menu.scss'
 import Aux from '../../../hoc/Aux'
 import Hamburger from '../Hamburger/Hamburger'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 class Menu extends Component {
     constructor(props) {
@@ -21,11 +21,11 @@ class Menu extends Component {
             <Aux>
                 <Hamburger clickEvent={ this.toggleHandler } />
                 <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/demos">Demos</Link>
-                    <Link to="/team">Team</Link>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink to="/home" activeClassName="active">Home</NavLink>
+                    <NavLink to="/about" activeClassName="active">About</NavLink>
+                    <NavLink to="/demos" activeClassName="active">Demos</NavLink>
+                    <NavLink to="/team" activeClassName="active">Team</NavLink>
+                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 </nav>
             </Aux>
         )

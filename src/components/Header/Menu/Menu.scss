@@ -17,8 +17,20 @@ nav {
         padding: 1rem 2rem;
         text-transform: uppercase;
         font-weight: bold;
+        position: relative;
         &.active {
             color: var(--color-helium);
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -7px;
+                transform: translateX( -50%);
+                background-color: var(--color-helium);
+                border-radius: 5px;
+                width: 10px;
+                height: 10px;
+            }
         }
     }
 }
@@ -39,6 +51,17 @@ body.navOpen {
     nav {
         opacity: 1;
         transform: scale(1, 1);
+        a {
+            &.active {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 15px;
+                    bottom: 50%;
+                    transform: translateY(50%);
+                }
+            }
+        }
     }
 }
 

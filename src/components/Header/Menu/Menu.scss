@@ -17,6 +17,9 @@ nav {
         padding: 1rem 2rem;
         text-transform: uppercase;
         font-weight: bold;
+        &.active {
+            color: var(--color-helium);
+        }
     }
 }
 body.navOpen {

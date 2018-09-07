@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Aux from '../../../hoc/Aux'
+import Layout from '../../../components/Layout/Layout'
 import Content from '../../../components/Content/Content'
 
 const contactPage = ( props ) => {
     return (
-        <Aux>
+        <Layout>
             <Content>
                 <h1>Contact Us</h1>
             </Content>
-        </Aux>
+        </Layout>
     )
 }
 

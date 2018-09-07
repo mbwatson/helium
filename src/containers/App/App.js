@@ -18,17 +18,15 @@ library.add(faRocket, faFlask, faUsers, fab)
 class App extends Component {
     render() {
         return (
-            <Layout>
-                <Switch>
-                    <Route exact path='/' render={ () => <Redirect to="/home" /> }/>
-                    <Route path='/home' component={ HomePage }/>
-                    <Route path='/about' component={ AboutPage }/>
-                    <Route path='/demos' component={ DemosPage }/>
-                    <Route path='/team' component={ TeamPage }/>
-                    <Route path='/contact' component={ ContactPage }/>
-                    <Route component={ HomePage } />
-                </Switch>
-            </Layout>
+            <Switch>
+                <Route exact path='/' render={ () => <Redirect to="/home" /> }/>
+                <Route path='/home' component={ HomePage }/>
+                <Route path='/about' component={ AboutPage }/>
+                <Route path='/demos' component={ DemosPage }/>
+                <Route path='/team' component={ TeamPage }/>
+                <Route path='/contact' component={ ContactPage }/>
+                <Route component={ HomePage } />
+            </Switch>
         );
     }
 }

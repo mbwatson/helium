@@ -1,5 +1,6 @@
 .content {
-    margin: 3rem;
+    margin: 1rem;
+    @media (min-width: 768px) { margin: 3rem; }
     .tileGrid {
         display: flex;
         flex-direction: column;

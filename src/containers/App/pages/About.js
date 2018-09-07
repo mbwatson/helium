@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Aux from '../../../hoc/Aux'
+import Layout from '../../../components/Layout/Layout'
 import Content from '../../../components/Content/Content'
 
 const homePage = ( props ) => {
     return (
-        <Aux>
+        <Layout>
             <Content>
                 <h1>About Helium</h1>
                 
@@ -37,7 +37,7 @@ const homePage = ( props ) => {
                 </ul>
 
             </Content>
-        </Aux>
+        </Layout>
     )
 }
 

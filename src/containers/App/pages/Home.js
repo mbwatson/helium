@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Aux from '../../../hoc/Aux'
+import Layout from '../../../components/Layout/Layout'
 import Hero from '../../../components/Hero/Hero'
 import Content from '../../../components/Content/Content'
 import Tile from '../../../components/Tile/Tile'
 
 const homePage = ( props ) => {
     return (
-        <Aux>
+        <Layout>
             <Hero />
             <Content>
                 <div className="tileGrid">
@@ -49,7 +49,7 @@ const homePage = ( props ) => {
                     </p>
                 </div>
             </Content>
-        </Aux>
+        </Layout>
     )
 }
 

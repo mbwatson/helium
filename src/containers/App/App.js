@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom'
-import Layout from '../../components/Layout/Layout'
-import HomePage from './pages/Home'
-import AboutPage from './pages/About'
-import DemosPage from './pages/Demos'
-import TeamPage from './pages/Team'
-import ContactPage from './pages/Contact'
+import { HomePage, AboutPage, DemosPage, TeamPage, ContactPage } from './pages/Pages'
 
 import './App.scss'
 
@@ -19,7 +14,9 @@ class App extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path='/' render={ () => <Redirect to="/home" /> }/>
+                <Route exact path='/' render={
+                    () => <Redirect to="/home" />
+                }/>
                 <Route path='/home' component={ HomePage }/>
                 <Route path='/about' component={ AboutPage }/>
                 <Route path='/demos' component={ DemosPage }/>

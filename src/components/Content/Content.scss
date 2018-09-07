@@ -1,10 +1,13 @@
 .content {
-    margin: 1rem;
-    @media (min-width: 768px) { margin: 3rem; }
+    margin: 2rem 1rem;
+    transition: margin 250ms;
+    @media (min-width: 700px) {
+        margin: 3rem;
+    }
     .tileGrid {
         display: flex;
         flex-direction: column;
-        @media (min-width: 600px) { flex-direction: row; }
+        @media (min-width: 700px) { flex-direction: row; }
         justify-content: space-around;
         a {
             text-decoration: underline;

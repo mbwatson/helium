@@ -6,7 +6,7 @@ import App from './containers/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-    <Router>
+    <Router basename={ '/helium' }>
         <App />
     </Router>,
     document.getElementById('root'));

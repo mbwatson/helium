@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import HomePage from './pages/Home'
 import AboutPage from './pages/About'
 import DemosPage from './pages/Demos'
 import TeamPage from './pages/Team'
 import ContactPage from './pages/Contact'
-import { Route } from 'react-router-dom'
 
 import './App.scss'
 
@@ -19,11 +19,14 @@ class App extends Component {
     render() {
         return (
             <Layout>
-                <Route exact path='/helium' component={ HomePage }/>
-                <Route exact path='/helium/about' component={ AboutPage }/>
-                <Route exact path='/helium/demos' component={ DemosPage }/>
-                <Route exact path='/helium/team' component={ TeamPage }/>
-                <Route exact path='/helium/contact' component={ ContactPage }/>
+                <Switch>
+                    <Route exact path='/' component={ HomePage }/>
+                    <Route path='/about' component={ AboutPage }/>
+                    <Route path='/demos' component={ DemosPage }/>
+                    <Route path='/team' component={ TeamPage }/>
+                    <Route path='/contact' component={ ContactPage }/>
+                    <Route component={ HomePage } />
+                </Switch>
             </Layout>
         );
     }

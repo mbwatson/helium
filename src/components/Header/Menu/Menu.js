@@ -21,11 +21,11 @@ class Menu extends Component {
             <Aux>
                 <Hamburger clickEvent={ this.toggleHandler } />
                 <nav>
-                    <Link to="/helium">Home</Link>
-                    <Link to="/helium/about">About</Link>
-                    <Link to="/helium/demos">Demos</Link>
-                    <Link to="/helium/team">Team</Link>
-                    <Link to="/helium/contact">Contact</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/demos">Demos</Link>
+                    <Link to="/team">Team</Link>
+                    <Link to="/contact">Contact</Link>
                 </nav>
             </Aux>
         )

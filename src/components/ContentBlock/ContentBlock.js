@@ -3,7 +3,8 @@ import './ContentBlock.scss'
 
 const contentBlock = ( props ) => {
     return (
-        <div className={ "content-block " + props.color }>
+        <div className={ "content-block"}
+            style={{ backgroundColor: `var(--color-${props.color})` }} >
             { props.children }
         </div>
     )

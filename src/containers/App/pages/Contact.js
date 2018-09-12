@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Layout from '../../../components/Layout/Layout'
-import Content from '../../../components/Content/Content'
+import ContentBlock from '../../../components/ContentBlock/ContentBlock'
 
 const contactPage = ( props ) => {
     return (
         <Layout>
-            <Content>
+            <ContentBlock>
                 <h1>Contact Us</h1>
-            </Content>
+            </ContentBlock>
         </Layout>
     )
 }

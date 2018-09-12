@@ -2,14 +2,14 @@ import React from 'react';
 
 import Layout from '../../../components/Layout/Layout'
 import Hero from '../../../components/Hero/Hero'
-import Content from '../../../components/Content/Content'
+import ContentBlock from '../../../components/ContentBlock/ContentBlock'
 import Tile from '../../../components/Tile/Tile'
 
 const homePage = ( props ) => {
     return (
         <Layout>
             <Hero />
-            <Content>
+            <ContentBlock>
                 <div className="tileGrid">
                     <Tile
                         icon="rocket"
@@ -48,7 +48,7 @@ const homePage = ( props ) => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates harum saepe ad. Magni exercitationem expedita, neque eveniet id totam et, ea est aliquam in quisquam voluptatem unde, ipsum temporibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates harum saepe ad. Magni exercitationem expedita, neque eveniet id totam et, ea est aliquam in quisquam voluptatem unde, ipsum temporibus?
                     </p>
                 </div>
-            </Content>
+            </ContentBlock>
         </Layout>
     )
 }

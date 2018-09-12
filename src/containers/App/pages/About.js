@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Layout from '../../../components/Layout/Layout'
-import Content from '../../../components/Content/Content'
+import ContentBlock from '../../../components/ContentBlock/ContentBlock'
 
 const homePage = ( props ) => {
     return (
         <Layout>
-            <Content>
+            <ContentBlock>
                 <h1>About Helium</h1>
                 
                 <h2>Data Commons Pilot Phase Consortium (DCPPC)</h2>
@@ -22,6 +22,9 @@ const homePage = ( props ) => {
                     will adhere to FAIR principles. This work is being carried out by the Data Commons Pilot Phase Consortium (DCPPC).
                 </p>
 
+            </ContentBlock>
+
+            <ContentBlock color="sky">
                 <h3>Activities within the DCPPC are organized around establishing nine Key Capabilities:</h3>
 
                 <ul>
@@ -36,7 +39,7 @@ const homePage = ( props ) => {
                     <li>KC9: Engage in training and outreach.</li>
                 </ul>
 
-            </Content>
+            </ContentBlock>
         </Layout>
     )
 }

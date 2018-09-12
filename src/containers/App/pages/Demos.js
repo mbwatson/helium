@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Layout from '../../../components/Layout/Layout'
-import Content from '../../../components/Content/Content'
+import ContentBlock from '../../../components/ContentBlock/ContentBlock'
 
 const demosPage = ( props ) => {
     return (
         <Layout>
-            <Content>
+            <ContentBlock>
                 <h1>Helium Demos</h1>
-            </Content>
+            </ContentBlock>
         </Layout>
     )
 }

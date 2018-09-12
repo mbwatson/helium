@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import './Menu.scss'
-import Aux from '../../../hoc/Aux'
 import Hamburger from '../Hamburger/Hamburger'
 import { NavLink } from 'react-router-dom'
 
@@ -18,7 +17,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <Aux>
+            <Fragment>
                 <Hamburger clickEvent={ this.toggleHandler } />
                 <nav>
                     <NavLink to="/home" activeClassName="active">Home</NavLink>
@@ -27,7 +26,7 @@ class Menu extends Component {
                     <NavLink to="/team" activeClassName="active">Team</NavLink>
                     <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 </nav>
-            </Aux>
+            </Fragment>
         )
     }
 }

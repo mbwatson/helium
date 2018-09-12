@@ -8,14 +8,17 @@
     --color-pearl: #f6f6f9;
     --color-tin: #c6c9cf;
     --color-powder: #f0f0f5;
+    
+    --color-shark: #6996ad;
+    --color-pigeon: #7285a5;
     --color-helium: #349ed3;
     --color-sky: #54bef3;
+    --color-cerulean: #9bc4e2;
+    --color-surf: #63d1f4;
+
     --color-midnight: #170b33;
     --color-lilac: #332e71;
     --color-tan: #a17c6d;
-    --color-pigeon: #7285a5;
-    --color-surf: #63d1f4;
-    --color-shark: #6996ad;
 }
 
 body {

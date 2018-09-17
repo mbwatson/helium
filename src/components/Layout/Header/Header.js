@@ -9,7 +9,7 @@ const header = ( props ) => {
         <header>
             <Menu />
             <div className="spacer"></div>
-            <Link to="/home" activeClassName="active">
+            <Link to="/home">
                 <Brand />
             </Link>
         </header>

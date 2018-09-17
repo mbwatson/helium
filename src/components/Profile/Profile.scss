@@ -4,5 +4,28 @@
     padding: 1rem;
     margin-bottom: 2rem;
     text-align: center;
-    display: inline-block;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    &:hover {
+        .avatar__image {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+    .avatar-container {
+        margin-right: 1rem;
+    }
+    .profile__details {
+        flex: 1;
+        // border: 1px solid #f00;
+        .profile__details__name {
+            text-align: left;
+            padding: 0 1rem;
+        }
+        .profile__details__bio {
+            text-align: left;
+            padding: 0 1rem;
+        }
+    }
 }

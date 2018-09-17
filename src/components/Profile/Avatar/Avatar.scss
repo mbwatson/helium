@@ -1,14 +1,10 @@
-.AvatarContainer {
+.avatar-container {
     display: inline-block;
     border-radius: 50%;
     clip-path: circle(50%);
-    .Avatar__image {
+    .avatar__image {
         display: block;
         opacity: 0.75;
         transition: opacity 250ms, transform 500ms ease-out;
-    }
-    .Avatar__image:hover {
-        opacity: 1;
-        transform: scale(1.1);
     }
 }

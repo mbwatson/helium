@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import dcppcLogo from '../../images/dcppc-logo.svg'
+import dcppcLogo from '../../../images/dcppc-logo.svg'
 
 const footer = ( props ) => {
     return (

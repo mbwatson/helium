@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from './Menu/Menu'
 import Brand from './Brand/Brand'
+import { Link } from 'react-router-dom'
 import './Header.scss'
 
 const header = ( props ) => {
@@ -8,7 +9,9 @@ const header = ( props ) => {
         <header>
             <Menu />
             <div className="spacer"></div>
-            <Brand />
+            <Link to="/home" activeClassName="active">
+                <Brand />
+            </Link>
         </header>
     )
 }

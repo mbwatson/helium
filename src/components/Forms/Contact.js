@@ -26,15 +26,23 @@ class ContactForm extends Component {
         super(props)
         this.state = {
             name: '',
+            nameError: '',
             email: '',
+            emailError: '',
             message: '',
+            messageError: '',
           };
     }
-    handleChange = name => event => {
+    changeHandler = name => event => {
         this.setState({
             [name]: event.target.value,
         });
-    };
+    }
+    submitHandler = name => event => {
+        this.setState({
+            [name]: event.target.value,
+        });
+    }
     render() {
         const { classes } = this.props;
         return (
@@ -42,11 +50,12 @@ class ContactForm extends Component {
                 <TextField
                     id="name"
                     label="Name"
-                    type="name"
+                    type="text"
                     required={ true }
                     className={ classes.textField }
                     value={ this.state.name }
-                    onChange={ this.handleChange('name') }
+                    errorText={ this.state.nameError }
+                    onChange={ this.changeHandler('name') }
                     margin="normal"
                 />
                 <TextField
@@ -56,7 +65,8 @@ class ContactForm extends Component {
                     required={ true }
                     className={ classes.textField }
                     value={ this.state.email }
-                    onChange={ this.handleChange('email') }
+                    errorText={ this.state.emailError }
+                    onChange={ this.changeHandler('email') }
                     margin="normal"
                 />
                 <TextField multiline
@@ -65,7 +75,8 @@ class ContactForm extends Component {
                     required={ true }
                     rowsMax="10"
                     value={ this.state.multiline }
-                    onChange={ this.handleChange('multiline') }
+                    errorText={ this.state.messageError }
+                    onChange={ this.changeHandler('multiline') }
                     className={ classes.textField }
                     margin="normal"
                 />

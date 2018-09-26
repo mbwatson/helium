@@ -6,6 +6,7 @@ const styles = ( theme ) => ({
     heading: {
         marginBottom: 2 * theme.spacing.unit,
         fontFamily: 'Nunito',
+        color: theme.palette.secondary.main,
         [theme.breakpoints.up('xs')]: {
             marginTop: 0,
             textAlign: 'center',
@@ -21,7 +22,7 @@ const styles = ( theme ) => ({
 })
 
 const heading = ( props ) => {
-    const { classes } = props;
+    const { classes } = props
     return (
             <Typography variant="display2" className={ classes.heading }>
                 { props.children }
@@ -30,4 +31,3 @@ const heading = ( props ) => {
 }
 
 export default withStyles(styles)(heading)
-

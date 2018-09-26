@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = ( theme ) => ({
     heading: {
         marginBottom: 2 * theme.spacing.unit,
+        fontFamily: 'Nunito',
         [theme.breakpoints.up('xs')]: {
             marginTop: 0,
             textAlign: 'center',

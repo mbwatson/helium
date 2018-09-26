@@ -5,24 +5,11 @@ import './index.css';
 import App from './App/App';
 import registerServiceWorker from './registerServiceWorker';
 
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: '#349ed3',
-        },
-        secondary: {
-            main: '#54cef3',
-        },
-        error: {
-            main: '#ff0000',
-        }
-    },
-});
+import Theme from './Theme'
+import { MuiThemeProvider } from '@material-ui/core/styles';
 
 ReactDOM.render(
-    <MuiThemeProvider theme={ theme }>
+    <MuiThemeProvider theme={ Theme }>
         <Router basename={ '/helium' }>
             <App />
         </Router>

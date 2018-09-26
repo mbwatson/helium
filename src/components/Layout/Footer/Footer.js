@@ -13,8 +13,9 @@ const footer = ( props ) => {
                 </a>
             </div>
             <div className="footer__box">
-                View our Documentation on
-                <a href="https://github.com/dcppc/dcppc-phase1-demos/blob/master/demo-list.rst" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab', 'github'] } /> GitHub</a>
+                <a href="https://github.com/dcppc/dcppc-phase1-demos/blob/master/demo-list.rst" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab', 'github'] } />
+                    &nbsp;View our Documentation
+                </a>
             </div>
         </footer>
     )

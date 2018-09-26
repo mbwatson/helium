@@ -38,10 +38,8 @@ class ContactForm extends Component {
             [name]: event.target.value,
         });
     }
-    submitHandler = name => event => {
-        this.setState({
-            [name]: event.target.value,
-        });
+    submitHandler = (event) => {
+        //
     }
     render() {
         const { classes } = this.props;
@@ -54,7 +52,7 @@ class ContactForm extends Component {
                     required={ true }
                     className={ classes.textField }
                     value={ this.state.name }
-                    errorText={ this.state.nameError }
+                    errortext={ this.state.nameError }
                     onChange={ this.changeHandler('name') }
                     margin="normal"
                 />
@@ -65,7 +63,7 @@ class ContactForm extends Component {
                     required={ true }
                     className={ classes.textField }
                     value={ this.state.email }
-                    errorText={ this.state.emailError }
+                    errortext={ this.state.emailError }
                     onChange={ this.changeHandler('email') }
                     margin="normal"
                 />
@@ -75,7 +73,7 @@ class ContactForm extends Component {
                     required={ true }
                     rowsMax="10"
                     value={ this.state.multiline }
-                    errorText={ this.state.messageError }
+                    errortext={ this.state.messageError }
                     onChange={ this.changeHandler('multiline') }
                     className={ classes.textField }
                     margin="normal"

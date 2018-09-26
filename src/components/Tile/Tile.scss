@@ -1,8 +1,20 @@
+.tile-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    @media (min-width: 700px) {
+        flex-direction: row;
+    }
+    justify-content: space-between;
+    a {
+        text-decoration: underline;
+    }
+}
+
 .tile {
     flex: 1;
-    margin: 1rem;
-    border-radius: 4px;
     overflow: hidden;
+    margin: 1rem;
     .tile__icon {
         text-align: center;
         font-size: 3rem;

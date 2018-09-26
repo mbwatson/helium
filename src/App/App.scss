@@ -10,6 +10,12 @@ a, a:hover, a:active, a:visited {
     text-decoration: none;
     color: var(--ocean);
     transition: color 250ms;
+    &.text-link {
+        margin-left: 5px;
+        padding: 1px 2px;
+        background-color: var(--color-powder);
+        border-bottom: 1px solid var(--color-helium);
+    }
 }
 a:hover {
     color: var(--color-helium);
@@ -18,12 +24,14 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
 }
+
 p {
     font-family: var(--font-paragraph);
+    line-height: 1.2;
 }
 
 body {
-    font-size: 11pt;
+    font-size: 12pt;
     font-family: var(--font-paragraph);
     letter-spacing: 1px;
     color: var(--dark);
@@ -39,6 +47,7 @@ body {
 
 main {
     flex: 1;
+    background-color: #fff;
 }
 
 #root {
@@ -59,9 +68,6 @@ main {
     }
 }
 
-main {
-    background-color: #fff;
-}
 
 .horizontalRule {
     margin: 2rem 0;

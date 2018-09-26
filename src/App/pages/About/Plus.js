@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Typography } from '@material-ui/core'
 
-import InnerContent from '../../../hoc/InnerContent'
 import Heading from '../../../components/Heading/Heading'
 
 const plus = ( props ) => {
     return (
-        <InnerContent>
+        <Fragment>
             <Heading className="compact">Helium+ and DataStage</Heading>
 
             <Typography paragraph>
@@ -24,7 +23,7 @@ const plus = ( props ) => {
             <Typography paragraph>
                 For NHLBI research investigators who need to find, access, share, store, cross-link, and compute on large-scale data sets, the NHLBI Data Resource will be a cloud-based platform that has as its foundation the NIH Data Commons that provides tools, applications, and workflows to enable these capabilities in secure workspaces.  The NHLBI Data Resource will be a rationally organized digital environment, integrated within the broader NIH Data Commons ecosystem, that will accelerate efficient biomedical research and maximize community engagement and productivity.  Ultimately, the NHLBI Data Resource will drive discovery leading to novel diagnostic tools, therapeutic options, and prevention strategies to treat heart, lung, blood, and sleep disorders. 
             </Typography>
-        </InnerContent>
+        </Fragment>
     )
 }
 

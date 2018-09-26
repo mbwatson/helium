@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails, Typography } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-import InnerContent from '../../hoc/InnerContent'
+import Container from '../../components/Container/Container'
 import Heading from '../../components/Heading/Heading'
 
 import demoContent from './demoContent'
@@ -27,7 +27,7 @@ const demosPage = ( props ) => {
     const { classes } = props;
 
     return (
-        <InnerContent className={ classes.root }>
+        <Container>
             <Heading>Helium Demos</Heading>
 
             {
@@ -46,7 +46,7 @@ const demosPage = ( props ) => {
                     </ExpansionPanel>
                 })
             }
-        </InnerContent>
+        </Container>
     )
 }
 

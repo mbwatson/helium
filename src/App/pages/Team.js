@@ -1,13 +1,13 @@
 import React from 'react';
 import { Typography } from '@material-ui/core'
 
+import Container from '../../components/Container/Container'
 import Heading from '../../components/Heading/Heading'
-import InnerContent from '../../hoc/InnerContent'
 import Profile from '../../components/Profile/Profile'
 
 const teamPage = ( props ) => {
     return (
-        <InnerContent>
+        <Container>
             <Heading>Meet the Helium Team</Heading>
 
             <Profile name="Alice Anderson" avatar="https://picsum.photos/200/200?random">
@@ -27,7 +27,7 @@ const teamPage = ( props ) => {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?
                 </Typography>
             </Profile>
-        </InnerContent>
+        </Container>
     )
 }
 

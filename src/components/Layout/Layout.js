@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react'
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
-
-import './Layout.scss'
+import Header from './Header'
+import Footer from './Footer'
 
 const layout = ( props ) => {
     return (

@@ -25,9 +25,11 @@ const theme = createMuiTheme({
         },
         body1: {
             fontFamily: 'Open Sans',
+            lineHeight: '1.75rem',
         },
         body2: {
             fontFamily: 'Open Sans',
+            lineHeight: '1.75rem',
         },
     },
 })

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Typography } from '@material-ui/core'
 
-import InnerContent from '../../hoc/InnerContent'
+import Container from '../../components/Container/Container'
 import Heading from '../../components/Heading/Heading'
 import ContactForm from '../../components/Forms/Contact'
 
 const contactPage = ( props ) => {
     return (
-        <InnerContent>
+        <Container>
+            
             <Heading>Contact Helium</Heading>
 
             <Typography paragraph>
@@ -16,7 +17,8 @@ const contactPage = ( props ) => {
             </Typography>
 
             <ContactForm />
-        </InnerContent>
+
+        </Container>
     )
 }
 

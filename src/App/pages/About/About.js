@@ -1,26 +1,29 @@
-import React, { Fragment } from 'react';
-import { NavLink, Switch, Route, Redirect } from 'react-router-dom'
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { Grid } from '@material-ui/core';
 
-import Submenu from '../../../components/Submenu/Submenu'
+import Container from '../../../components/Container/Container'
+import Submenu from '../../../components/Menus/Submenu'
 import { Overview, Objectives, Dcppc, Plus, Workstream } from './Pages'
 
 const aboutPage = ( props ) => {
+    const submenuLinks = [
+        { href: '/about/overview',      text: 'Overview', },
+        { href: '/about/objectives',    text: 'Objectives', },
+        { href: '/about/dcppc',         text: 'DCPPC', },
+        { href: '/about/plus',          text: 'Helium+', },
+        { href: '/about/workstream',    text: 'Workstream', },
+    ]
+
     return (
-        <Fragment>
+        <Container>
             <Grid container
-                spacing={ 16 }
+                spacing={ 40 }
                 direction="row"
                 justify="flex-start"
             >
                 <Grid item xs={ 12 } sm={ 3 } md={ 2 } >
-                    <Submenu style={ {border: '1px solid #f00'} }>
-                        <NavLink to="/about/overview">Overview</NavLink>
-                        <NavLink to="/about/objectives">Objectives</NavLink>
-                        <NavLink to="/about/dcppc">DCPPC</NavLink>
-                        <NavLink to="/about/plus">Helium+</NavLink>
-                        <NavLink to="/about/workstream">Workstream</NavLink>
-                    </Submenu>
+                    <Submenu links={ submenuLinks }/>
                 </Grid>
                 <Grid item xs={ 12 } sm={ 9 } md={ 10 } >
                     <Switch>
@@ -34,7 +37,7 @@ const aboutPage = ( props ) => {
                     </Switch>
                 </Grid>
             </Grid>
-        </Fragment>
+        </Container>
     )
 }
 

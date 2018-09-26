@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Label as LabelIcon } from '@material-ui/icons'
 
-import InnerContent from '../../../hoc/InnerContent'
 import Heading from '../../../components/Heading/Heading'
 
 const objectives = ( props ) => {
     return (
-        <InnerContent className="compact">
+        <Fragment>
 
             <Heading>Objectives</Heading>
+            
             <List>
                 <ListItem>
                     <ListItemIcon><LabelIcon /></ListItemIcon>
@@ -42,7 +42,7 @@ const objectives = ( props ) => {
                     />
                 </ListItem>
             </List>
-        </InnerContent>
+        </Fragment>
     )
 }
 

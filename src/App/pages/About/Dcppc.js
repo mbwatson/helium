@@ -1,20 +1,19 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Done as DoneIcon } from '@material-ui/icons'
 import Typography from '@material-ui/core/Typography'
 
-import InnerContent from '../../../hoc/InnerContent'
 import Heading from '../../../components/Heading/Heading'
-import TextLink from '../../../components/Links/TextLink'
+import ExternalLink from '../../../components/Links/ExternalLink'
 
 const dcppc = ( props ) => {
     return (
-        <InnerContent className="compact">
+        <Fragment>
     
             <Heading>Data Commons Pilot Phase Consortium (DCPPC)</Heading>
 
             <Typography paragraph>
-                The <TextLink to="https://nihdatacommons.us/">NIH Data Commons</TextLink> will accelerate biomedical discovery by providing a cloud-based platform
+                The <ExternalLink to="https://nihdatacommons.us/">NIH Data Commons</ExternalLink> will accelerate biomedical discovery by providing a cloud-based platform
                 where investigators can store, share, access, and compute on digital objects including data,
                 software, workflows, and more. The initial implementation is a Pilot Phase in which targeted
                 high-value data sources will serve as test cases for the infrastructure to be developed.
@@ -84,7 +83,7 @@ const dcppc = ( props ) => {
                     />
                 </ListItem>
             </List>
-        </InnerContent>
+        </Fragment>
     )
 }
 

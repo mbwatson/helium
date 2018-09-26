@@ -3,10 +3,19 @@ import { withTheme } from '@material-ui/core/styles';
 
 const brand = ( props ) => {
     const { theme } = props
+    
     const colors = {
         primary: theme.palette.primary.main,
         secondary: theme.palette.secondary.main,
     }
+    
+    const textStyle = {
+        fontSize: '6rem',
+        fontWeight: 'bold',
+        color: 'var(--color-helium)',
+        fontFamily: 'Nunito',
+    }
+
     return (
         <svg width="125px" height="75px" viewBox="0 0 125 100">
             <g id="helium-atom">
@@ -17,7 +26,7 @@ const brand = ( props ) => {
                     type="rotate" from="0 20 50" to="180 20 50"
                     begin="0s" dur="10s" repeatCount="indefinite"/>
             </g>
-            <text x="20" y="97" className="brand-text" fill={ colors.primary }>He</text>
+            <text x="20" y="97" style={ textStyle } fill={ colors.primary }>He</text>
             <circle className="circle" cx="20" cy="50" r="10" fill={ colors.secondary } stroke="transparent"></circle>
         </svg>
     )

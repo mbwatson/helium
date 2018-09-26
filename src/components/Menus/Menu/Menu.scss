@@ -24,7 +24,7 @@ nav {
                 content: '';
                 position: absolute;
                 left: 50%;
-                bottom: -3px;
+                bottom: -2px;
                 transform: translateX(-50%);
                 background-color: var(--color-helium);
                 border-top-left-radius: 7px;
@@ -69,7 +69,7 @@ body.navOpen {
     }
 }
 
-@media (min-width: 968px) {
+@media (min-width: 800px) {
     header {
         .hamburger {
             transform: translateX(-6em);

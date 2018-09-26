@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Typography } from '@material-ui/core'
 
-import InnerContent from '../../../hoc/InnerContent'
 import Heading from '../../../components/Heading/Heading'
 
 const workstream =  ( props ) => {
     return (
-        <InnerContent>
+        <Fragment>
             <Heading className="compact">Workstream</Heading>
 
             <Typography paragraph>
@@ -20,7 +19,7 @@ const workstream =  ( props ) => {
             <Typography paragraph>
                 Helium and Helium+ are dependent upon one another. For instance, Helium+ is implementing a scientific use case for the NHLBI on the Helium infrastructure. Therefore, communication of any issues that arise during the course of the DataSTAGE project to the Helium team is crucial to ensure informed development of the Helium platform.
             </Typography>
-        </InnerContent>
+        </Fragment>
     )
 }
 

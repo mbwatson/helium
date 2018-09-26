@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Layout from '../components/Layout/Layout'
-
 import { Switch, Route, Redirect } from 'react-router-dom'
+
+import Layout from '../components/Layout/Layout'
 import { HomePage, DemosPage, TeamPage, ContactPage } from './pages/Pages'
 import AboutPage from './pages/About/About'
 

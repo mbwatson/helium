@@ -11,7 +11,7 @@ const homePage = ( props ) => {
     return (
         <Fragment>
             <Hero heading="Helium"
-                subheading="A collaborative, multi-institutional team working to create a Data Commons to transforms the way we access, use, and generate data."
+                subheading="A collaborative, multi-institutional team working to create a Data Commons that transforms the way we access, use, and generate data."
             />
 
             <InnerContent>

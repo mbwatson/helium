@@ -8,9 +8,6 @@ const theme = createMuiTheme({
         secondary: {
             main: '#54cef3',
         },
-        error: {
-            main: '#ff0000',
-        }
     },
     typography: {
         htmlFontSize: 14,
@@ -23,9 +20,11 @@ const theme = createMuiTheme({
         display3: {
             fontFamily: 'Nunito',
         },
+        display4: {
+            fontFamily: 'Nunito',
+        },
         body1: {
             fontFamily: 'Open Sans',
-            lineSpacing: '1.5',
         }
     },
 })

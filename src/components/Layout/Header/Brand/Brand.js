@@ -3,7 +3,6 @@ import { withTheme } from '@material-ui/core/styles';
 
 const brand = ( props ) => {
     const { theme } = props
-    console.log(theme)
     const colors = {
         primary: theme.palette.primary.main,
         secondary: theme.palette.secondary.main,

@@ -1,6 +1,6 @@
 // * { border: 1px solid #0ff; }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Open+Sans:400,700|Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Open+Sans:400,700|Nunito:300,400,700');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -10,11 +10,6 @@ a, a:hover, a:active, a:visited {
     text-decoration: none;
     color: var(--color-ocean);
     transition: color 250ms;
-    &.text-link {
-        padding: 1px 2px;
-        background-color: var(--color-powder);
-        border-bottom: 1px solid var(--color-helium);
-    }
 }
 a:hover {
     color: var(--color-helium);

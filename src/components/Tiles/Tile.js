@@ -1,10 +1,9 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import { Link } from 'react-router-dom'
 import { Card, CardContent, CardActions, Typography, Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const styles = ( theme) => ({
+const styles = ( theme ) => ({
     root: {
     },
     cardMain: {
@@ -52,6 +51,7 @@ const styles = ( theme) => ({
     },
     button: {
         display: 'inline-block',
+        margin: theme.spacing.unit,
     }
 })
 
@@ -76,11 +76,12 @@ const tile = ( props ) => {
                 </CardContent>
             </div>
             <CardActions className={ classes.cardActions }>
-                <Button component={ Link }
+                <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
                     to={ props.linkHref }
                     className={ classes.button }
-                    size="small"
-                    color="primary"
                 >
                     { props.linkText }
                 </Button>

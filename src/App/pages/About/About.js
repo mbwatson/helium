@@ -1,4 +1,5 @@
 import React from 'react';
+import { withStyles } from '@material-ui/core/styles'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { Grid } from '@material-ui/core';
 
@@ -6,7 +7,14 @@ import Container from '../../../components/Container/Container'
 import Submenu from '../../../components/Menus/Submenu'
 import { Overview, Objectives, Dcppc, Plus, Workstream } from './Pages'
 
+const styles = ( theme ) => ({
+    root: {
+    }
+})
+
 const aboutPage = ( props ) => {
+
+    const { classes } = props
     const submenuLinks = [
         { href: '/about/overview',      text: 'Overview', },
         { href: '/about/objectives',    text: 'Objectives', },
@@ -21,11 +29,12 @@ const aboutPage = ( props ) => {
                 spacing={ 40 }
                 direction="row"
                 justify="flex-start"
+                className={ classes.root }
             >
                 <Grid item xs={ 12 } sm={ 3 } md={ 2 } >
                     <Submenu links={ submenuLinks }/>
                 </Grid>
-                <Grid item xs={ 12 } sm={ 9 } md={ 10 } >
+                <Grid item xs={ 12 } sm={ 9 } md={ 10 }>
                     <Switch>
                         <Route exact path='/about/' render={ () => <Redirect to="/about/overview" /> }/>
                         <Route path='/about/overview' component={ Overview }/>
@@ -41,4 +50,4 @@ const aboutPage = ( props ) => {
     )
 }
 
-export default aboutPage
+export default withStyles(styles)(aboutPage)

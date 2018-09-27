@@ -4,7 +4,7 @@ import { Done as DoneIcon } from '@material-ui/icons'
 import Typography from '@material-ui/core/Typography'
 
 import Heading from '../../../components/Heading/Heading'
-import ExternalLink from '../../../components/Links/ExternalLink'
+import TextLink from '../../../components/Links/TextLink'
 
 const dcppc = ( props ) => {
     return (
@@ -13,7 +13,7 @@ const dcppc = ( props ) => {
             <Heading>Data Commons Pilot Phase Consortium (DCPPC)</Heading>
 
             <Typography paragraph>
-                The <ExternalLink to="https://nihdatacommons.us/">NIH Data Commons</ExternalLink> will accelerate biomedical discovery by providing a cloud-based platform
+                The <TextLink to="https://nihdatacommons.us/">NIH Data Commons</TextLink> will accelerate biomedical discovery by providing a cloud-based platform
                 where investigators can store, share, access, and compute on digital objects including data,
                 software, workflows, and more. The initial implementation is a Pilot Phase in which targeted
                 high-value data sources will serve as test cases for the infrastructure to be developed.

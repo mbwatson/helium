@@ -15,24 +15,24 @@ const teamPage = ( props ) => {
     return (
         <Container className={ classes.root }>
 
-            <Title>Meet the Helium Team</Title>
+            <Title>Meet Team Helium</Title>
 
             <Profile
-                name="Alice Anderson"
-                avatar="https://picsum.photos/200/200?random"
-                bio="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?"
+                name='Alice Anderson'
+                imageSrc='https://picsum.photos/200/200?random'
+                bio='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?'
             />
 
             <Profile
-                name="Bob Bobbins"
-                avatar="https://picsum.photos/201/201?random"
-                bio="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?"
+                name='Bob Bobbins'
+                avatar='https://picsum.photos/201/201?random'
+                bio='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?'
             />
             
             <Profile
-                name="Carl Conner"
-                avatar="https://picsum.photos/202/202?random"
-                bio="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?"
+                name='Carl Conner'
+                avatar='https://picsum.photos/202/202?random'
+                bio='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?'
             />
 
         </Container>

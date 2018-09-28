@@ -11,7 +11,6 @@ const styles = ( theme ) => ({
     card: {
         width: '100%',
         display: 'flex',
-        alignItems: 'flex-start',
         marginBottom: 2 * theme.spacing.unit,
         [theme.breakpoints.up('xs')]: {
             flexDirection: 'column',
@@ -19,12 +18,13 @@ const styles = ( theme ) => ({
         },
         [theme.breakpoints.up('md')]: {
             flexDirection: 'row',
+            alignItems: 'flex-start',
         },
     },
     avatar: {
         marginTop: 2 * theme.spacing.unit,
-        minWidth: '150px',
-        maxWidth: '150px',
+        minWidth: '100px',
+        maxWidth: '100px',
         height: 'auto',
     },
     details: {
@@ -54,7 +54,7 @@ const profile = ( props ) => {
     const { classes } = props
     return (
         <Card className={ classes.card } elevation={ 0 }>
-            <Avatar src={ props.imageSrc } className={ classes.avatar } size="150px"/>
+            <Avatar src={ props.imageSrc } className={ classes.avatar } size="100px"/>
             <CardContent className={ classes.details }>
                 <Heading className={ classes.name }>{ props.name }</Heading>
                 <Subheading className={ classes.title }>{ props.title }</Subheading>

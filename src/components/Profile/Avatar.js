@@ -4,8 +4,8 @@ import { withStyles } from '@material-ui/core/styles'
 const styles = ( theme ) => ({
     root: {
         display: 'inline-block',
-        borderRadius: '50%',
-        clipPath: 'circle(50%)',
+        // clipPath: 'circle(50% at 50% 50%)',
+        borderRadius: '10px',
     },
     image: {
         display: 'block',
@@ -17,8 +17,13 @@ const styles = ( theme ) => ({
 const avatar = ( props ) => {
     const { classes } = props
     return (
-        <div className={ classes.root }>
-            <img src={ props.src } alt="Avatar" className={ classes.image } />
+        <div className={ [classes.root, props.className].join(' ') }
+            style={{
+                maxHeight: props.size, maxWidth: props.size,
+                minHeight: props.size, minWidth: props.size,
+                backgroundImage: 'url(' + props.src + ')',
+            }}
+        >
         </div>
     )
 }

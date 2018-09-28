@@ -4,19 +4,18 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = ( theme ) => ({
     root: {
-        marginBottom: theme.spacing.unit,
-        fontFamily: 'Nunito',
-        color: theme.palette.secondary.main,
+        margin: 0,
+        color: theme.palette.common.black
     }
 })
 
-const heading = ( props ) => {
+const subheading = ( props ) => {
     const { classes } = props
     return (
-        <Typography variant="headline" className={ [classes.root, props.className].join(' ') }>
+        <Typography variant="subheading" className={ [classes.root, props.className].join(' ') }>
             { props.children }
         </Typography>
     )
 }
 
-export default withStyles(styles)(heading)
+export default withStyles(styles)(subheading)

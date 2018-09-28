@@ -9,7 +9,7 @@ const styles = ( theme ) => ({
 const paragraph = ( props ) => {
     const { classes } = props
     return (
-        <Typography paragraph className={ classes.root }>
+        <Typography paragraph className={ [classes.root, props.className].join(' ') }>
             { props.children }
         </Typography>
     )

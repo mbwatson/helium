@@ -24,7 +24,7 @@ const styles = ( theme ) => ({
 const title = ( props ) => {
     const { classes } = props
     return (
-        <Typography variant="display2" className={ classes.root }>
+        <Typography variant="display2" className={ [classes.root, props.className].join(' ') }>
             { props.children }
         </Typography>
     )

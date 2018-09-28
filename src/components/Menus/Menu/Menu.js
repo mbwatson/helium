@@ -45,11 +45,16 @@ class Menu extends Component {
             <Fragment>
                 <Hamburger clickEvent={ this.toggleHandler } />
                 <nav>
-                    <NavLink to="/home" activeClassName="active" onClick={ this.menuClickHandler } >Home</NavLink>
-                    <NavLink to="/about" activeClassName="active" onClick={ this.menuClickHandler } >About</NavLink>
-                    <NavLink to="/demos" activeClassName="active" onClick={ this.menuClickHandler } >Demos</NavLink>
-                    <NavLink to="/team" activeClassName="active"onClick={ this.menuClickHandler } >Team</NavLink>
-                    <NavLink to="/contact" activeClassName="active" onClick={ this.menuClickHandler } >Contact</NavLink>
+                    {
+                        this.props.links.map( (link, index) => {
+                            return <NavLink
+                                key={ index }
+                                to={ link.href }
+                                onClick={ this.menuClickHandler }
+                                activeClassName="active"
+                            >{ link.text }</NavLink>
+                        })
+                    }
                 </nav>
             </Fragment>
         )

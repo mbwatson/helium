@@ -31,10 +31,15 @@ const styles = ( theme ) => ({
     },
     icon: {
         opacity: 0.25,
-        fontSize: '4rem',
+        fontSize: '2.5rem',
     },
     text: {
         flex: 1,
+    },
+    title: {
+        textAlign: 'center',
+    },
+    body: {
     },
     cardActions: {
         display: 'flex',
@@ -67,10 +72,10 @@ const tile = ( props ) => {
                     />
                 </CardContent>
                 <CardContent className={ classes.text }>
-                    <Typography gutterBottom variant="headline" component="h2">
+                    <Typography gutterBottom variant="headline" className={ classes.title }>
                         { props.title }
                     </Typography>
-                    <Typography component="p">
+                    <Typography component="p" variant="body2" className={ classes.body }>
                         { props.body }
                     </Typography>
                 </CardContent>

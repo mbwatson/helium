@@ -21,7 +21,7 @@ const header = ( props ) => {
     const { classes } = props
     return (
         <header className={ classes.root }>
-            <Menu />
+            <Menu links={ props.menuLinks } />
             <Spacer />
             <Link to="/home">
                 <Brand />

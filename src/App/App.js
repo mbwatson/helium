@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Layout from '../components/Layout/Layout'
-import { HomePage, DemosPage, TeamPage, ContactPage } from './pages/Pages'
+import { HomePage, DemosPage, WorkstreamPage, ContactPage } from './pages/Pages'
 import AboutPage from './pages/About/About'
 
 import './App.scss'
@@ -22,8 +22,8 @@ class App extends Component {
                     <Route exact path='/' render={ () => <Redirect to="/home" /> }/>
                     <Route path='/home' component={ HomePage } />
                     <Route path='/about' component={ AboutPage } />
+                    <Route path='/workstream' component={ WorkstreamPage } />
                     <Route path='/demos' component={ DemosPage } />
-                    <Route path='/team' component={ TeamPage } />
                     <Route path='/contact' component={ ContactPage } />
                     <Route component={ HomePage } />
                 </Switch>

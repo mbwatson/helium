@@ -29,7 +29,7 @@ const theme = createMuiTheme({
         },
         body2: {
             fontFamily: 'Open Sans',
-            lineHeight: '1.75rem',
+            lineHeight: '1.25rem',
         },
     },
 })

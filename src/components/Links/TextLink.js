@@ -1,5 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
+import { NavLink } from 'react-router-dom'
 
 const styles = ( theme ) => ({
     root: {
@@ -13,18 +14,26 @@ const styles = ( theme ) => ({
 
 const textLink = ( props ) => {
     const { classes } = props
-    const target = props.new ? '_blank' : null
-    const rel = props.new ? 'noopener noreferrer' : null
-
-    return (
-        <a href={ props.to }
-            className={ classes.root }
-            target={ target }
-            rel={ rel }
-        >
-            { props.children }
-        </a>
-    )
+    if (props.new) {
+        return (
+            <a href={ props.to }
+                className={ classes.root }
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                { props.children }
+            </a>
+        )        
+    } else {
+        return (
+            <NavLink to={ props.to }
+                className={ classes.root }
+            >
+                { props.children }
+            </NavLink>
+        )        
+       
+    }
 }
 
 export default withStyles(styles)(textLink)

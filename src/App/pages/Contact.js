@@ -1,20 +1,20 @@
 import React from 'react';
-import { Typography } from '@material-ui/core'
 
-import Container from '../../components/Container/Container'
-import Heading from '../../components/Heading/Heading'
+import Container from '../../components/Layout/Container'
+import Title from '../../components/Typography/Title'
+import Paragraph from '../../components/Typography/Paragraph'
 import ContactForm from '../../components/Forms/Contact'
 
 const contactPage = ( props ) => {
     return (
         <Container>
             
-            <Heading>Contact Helium</Heading>
+            <Title>Contact Helium</Title>
 
-            <Typography paragraph>
+            <Paragraph>
                 Please complete the form below to send us a message, and we will be in touch shortly.
                 Alternatively, feel free to send us an email at <a href="mailto:email@ddre.ss">email@ddre.ss</a>.
-            </Typography>
+            </Paragraph>
 
             <ContactForm />
 

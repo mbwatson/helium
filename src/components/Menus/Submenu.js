@@ -14,7 +14,10 @@ const styles = ( theme ) => ({
             paddingTop: 0,
         },
         [theme.breakpoints.up('sm')]: {
-            paddingTop: 8 * theme.spacing.unit,
+            paddingTop: 10 * theme.spacing.unit,
+        },
+        [theme.breakpoints.up('md')]: {
+            paddingTop: 12 * theme.spacing.unit,
         },
     },
     link: {

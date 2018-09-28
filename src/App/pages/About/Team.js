@@ -25,13 +25,13 @@ const teamPage = ( props ) => {
 
             <Profile
                 name='Bob Bobbins'
-                avatar='https://picsum.photos/201/201?random'
+                imageSrc='https://picsum.photos/201/201?random'
                 bio='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?'
             />
             
             <Profile
                 name='Carl Conner'
-                avatar='https://picsum.photos/202/202?random'
+                imageSrc='https://picsum.photos/202/202?random'
                 bio='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore. Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?'
             />
 

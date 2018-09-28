@@ -16,7 +16,7 @@ const teamPage = ( props ) => {
         {
             name: 'Alice Anderson',
             imageSrc: 'https://picsum.photos/200/200?random',
-            title: 'Job Title',
+            title: 'Lead Investigator',
             organization: 'Organization, Inc.',
             bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore.
@@ -25,8 +25,8 @@ const teamPage = ( props ) => {
         {
             name: 'Bob Bobbins',
             imageSrc: 'https://picsum.photos/201/201?random',
-            title: 'Job Title',
-            organization: 'Organization, Inc.',
+            title: 'Software Developer',
+            organization: 'Big Company, LLC',
             bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore.
                 Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?`,
@@ -34,8 +34,8 @@ const teamPage = ( props ) => {
         {
             name: 'Carl Conner',
             imageSrc: 'https://picsum.photos/202/202?random',
-            title: 'Job Title',
-            organization: 'Organization, Inc.',
+            title: 'Scientific Consultant',
+            organization: 'Mama\'s Lil\' Cyberinfrastructure Group',
             bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Adipisci omnis voluptatem possimus expedita ut, vero perspiciatis labore.
                 Cumque quasi ut modi accusamus, ullam voluptatem, cum recusandae consequatur vero rem adipisci?`,
@@ -49,9 +49,7 @@ const teamPage = ( props ) => {
             
             {
                 team.map( (person, index) => {
-                    return (
-                        <Profile key={ index } { ...person } />
-                    )
+                    return <Profile key={ index } { ...person } />
                 })
             }
 

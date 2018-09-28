@@ -50,12 +50,7 @@ const teamPage = ( props ) => {
             {
                 team.map( (person, index) => {
                     return (
-                        <Profile
-                            key={ index }
-                            name={ person.name }
-                            imageSrc={ person.imageSrc }
-                            bio={ person.bio }
-                        />
+                        <Profile key={ index } { ...person } />
                     )
                 })
             }

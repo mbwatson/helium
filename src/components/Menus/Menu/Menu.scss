@@ -18,19 +18,24 @@ nav {
         text-transform: uppercase;
         font-weight: bold;
         position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -18px;
+            background-color: var(--color-helium);
+            border-radius: 7px;
+            width: 14px;
+            height: 14px;
+            transition: bottom 300ms;
+            z-index: 0;
+        }
         &.active {
             color: var(--color-helium);
             &::after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                bottom: -2px;
-                transform: translateX(-50%);
-                background-color: var(--color-helium);
-                border-top-left-radius: 7px;
-                border-top-right-radius: 7px;
-                width: 14px;
-                height: 7px;
+                bottom: -9px;
+                transition: bottom 300ms 150ms;
             }
         }
     }
@@ -52,18 +57,10 @@ body.navOpen {
     nav {
         opacity: 1;
         transform: scale(1, 1);
-        z-index: 1;
+        z-index: 2;
         a {
-            &.active {
-                &::after {
-                    content: '';
-                    left: 15px;
-                    bottom: 50%;
-                    transform: translateY(50%);
-                    border-radius: 5px;
-                    width: 10px;
-                    height: 10px;
-                }
+            &::after {
+                display: none;
             }
         }
     }

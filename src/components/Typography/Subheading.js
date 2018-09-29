@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = ( theme ) => ({
     root: {
         margin: 0,
-        color: theme.palette.common.black
+        color: theme.palette.grey[800],
     }
 })
 

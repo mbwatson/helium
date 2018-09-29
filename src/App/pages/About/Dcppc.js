@@ -4,7 +4,7 @@ import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Done as DoneIcon } from '@material-ui/icons'
 
 import Title from '../../../components/Typography/Title'
-import Heading from '../../../components/Typography/Heading'
+import Subheading from '../../../components/Typography/Subheading'
 import TextLink from '../../../components/Links/TextLink'
 
 const styles = ( theme ) => ({
@@ -51,9 +51,9 @@ const dcppcPage = ( props ) => {
     
             <Title>DCPPC</Title>
 
-            <Heading>
+            <Subheading>
                 Activities within the <TextLink new to="https://nihdatacommons.us/">Data Commons Pilot Phase Consortium</TextLink> are organized around establishing nine Key Capabilities
-            </Heading>
+            </Subheading>
 
             <List>
                 {

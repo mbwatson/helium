@@ -14,7 +14,7 @@ const layout = ( props ) => {
     return (
         <Fragment>
             <Header menuLinks={ menuLinks }/>
-            <main>
+            <main style={{ zIndex: 1}}>
                 { props.children }
             </main>
             <Footer />

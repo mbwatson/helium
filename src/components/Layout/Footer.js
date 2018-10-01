@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import dcppcLogo from '../../images/dcppc-logo.svg'
+import dcppcLogo from '../../images/logos/dcppc.svg'
 
 const styles = theme => ({
     root: {

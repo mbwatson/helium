@@ -7,7 +7,22 @@ import TextLink from '../../../components/Links/TextLink'
 
 import GraphicPlaceholder from '../../../devComponents/GraphicPlaceholder'
 
+import RenciLogo from '../../../images/logos/renci.png'
+import RtiLogo from '../../../images/logos/rti.svg'
+import LbnlLogo from '../../../images/logos/berkeley-lab.jpg'
+import UnmLogo from '../../../images/logos/univ-new-mexico.png'
+import OsuLogo from '../../../images/logos/oregon-state-univ.svg'
+import JaxLabLogo from '../../../images/logos/jackson-lab.png'
+import MaastrichtLogo from '../../../images/logos/maastricht-univ.svg'
+
 const overviewPage = ( props ) => {
+    const logoContainer = {
+        textAlign: 'center',
+        verticalAlign: 'middle',
+    }
+    const logo = {
+        maxWidth: '100px',
+    }
     return (
         <Fragment>
 
@@ -18,14 +33,15 @@ const overviewPage = ( props ) => {
                 information technology engineers, bioinformaticians, and biomedical researchers
                 from <TextLink new to="https://www.renci.org">UNC-CH/RENCI</TextLink>, <TextLink new to="https://www.rti.org/">RTI</TextLink>, <TextLink new to="https://www.lbl.gov/">Lawrence Berkeley National Lab</TextLink>, <TextLink new to="http://www.unm.edu/">University of New Mexico</TextLink>, <TextLink new to="https://oregonstate.edu/">Oregon State University</TextLink>, <TextLink new to="https://www.jax.org/">Jackson Laboratory</TextLink>, and <TextLink new to="https://www.maastrichtuniversity.nl/">Maastricht University</TextLink>. 
             </Paragraph>
-
+            
             <Grid container spacing={ 32 }>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 }><GraphicPlaceholder height="100px" text="Partner"/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 }><GraphicPlaceholder height="100px" text="Partner"/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 }><GraphicPlaceholder height="100px" text="Partner"/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 }><GraphicPlaceholder height="100px" text="Partner"/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 }><GraphicPlaceholder height="100px" text="Partner"/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 }><GraphicPlaceholder height="100px" text="Partner"/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ RenciLogo } alt="RENCI" style={ logo }/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ RtiLogo } alt="RTI Logo" style={ logo }/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ JaxLabLogo } alt="Jackson Laboratory style={ logo }Logo"/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ MaastrichtLogo } alt="Maastricht University style={ logo }Logo"/></Grid>
             </Grid>
             
             <Paragraph>

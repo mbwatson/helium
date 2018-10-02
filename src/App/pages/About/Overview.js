@@ -21,6 +21,7 @@ const overviewPage = ( props ) => {
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
+        margin: '2rem auto',
     }
     const logoContainer = {
         flex: '1 0 150px',

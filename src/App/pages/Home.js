@@ -41,10 +41,9 @@ const homePage = ( props ) => {
                         paddingLeft: '1rem',
                     }}>    
                         <Paragraph>
-                            Our goal is to accelerate new biomedical discoveries by
-                            providing a cloud-based platform where investigators can
-                            store, share, access and compute on digital objects (data, software, etc.)
-                            generated from biomedical research.
+                            We help accelerate new biomedical discoveries by providing a cloud-based platform
+                            for investigators to store, share, access and compute on digital objects
+                            (data, software, etc.) generated from biomedical research.
                         </Paragraph>
                     </Grid>
                 </Grid>

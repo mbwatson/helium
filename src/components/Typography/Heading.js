@@ -7,6 +7,7 @@ const styles = ( theme ) => ({
         marginBottom: theme.spacing.unit,
         fontFamily: 'Nunito',
         color: theme.palette.secondary.main,
+        transition: 'margin 250ms',
     }
 })
 

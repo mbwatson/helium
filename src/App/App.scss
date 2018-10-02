@@ -21,11 +21,11 @@ body {
     letter-spacing: 1px;
     color: var(--color-dark);
     width: 100vw;
-    max-width: 100vw;
+    max-width: 1120px;
     margin: 0 auto;
     background-color: var(--color-powder);
     position: relative;
-    transition: max-width 250ms, border-radius 250ms;
+    transition: max-width 500ms, border-radius 250ms;
     overflow-x: hidden;
     background-image: linear-gradient(to bottom, var(--color-pearl), var(--color-tin))
 }
@@ -36,10 +36,10 @@ body {
     min-height: 100vh;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1120px) {
     body {
         margin: 0 auto;
-        max-width: 1120px;
+        max-width: 1080px;
     }
     main {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

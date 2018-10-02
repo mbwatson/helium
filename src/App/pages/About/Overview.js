@@ -30,7 +30,7 @@ const overviewPage = ( props ) => {
         margin: '0.5rem',
     }
     const logo = {
-        maxWidth: '200px',
+        maxWidth: '150px',
     }
 
     return (

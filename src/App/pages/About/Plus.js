@@ -12,13 +12,15 @@ const plusPage = ( props ) => {
             <Heading>HeliumPlus</Heading>
 
             <Paragraph>
-                Team HeliumPlus, a subset of Team Helium,
-                is one of four teams developing a customized organization-speccific platform
+                Team <em>HeliumPlus</em>, a subset of Team Helium,
+                is one of four teams developing a customized organization-specific platform
                 for DataSTAGE (Storage, Toolspace, Access and analytics for biG data Empowerment),
                 a project funded by the National Heart, Lung, and Blood Institute (NHLBI)
                 of the national Institutes of Health (NIH).
-                The "Plus" designation was added to help the consortium distinguish DataSTAGE teams
-                from the broader NIH Data Commons project.
+            </Paragraph>
+
+            <Paragraph>
+                The "Plus" designation help to distinguish DataSTAGE teams from the broader NIH Data Commons project.
             </Paragraph>
             
             <Heading>Relationship between DataSTAGE and the DCPPC</Heading>

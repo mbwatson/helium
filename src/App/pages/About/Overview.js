@@ -8,21 +8,31 @@ import TextLink from '../../../components/Links/TextLink'
 import GraphicPlaceholder from '../../../devComponents/GraphicPlaceholder'
 
 import RenciLogo from '../../../images/logos/renci.png'
-import RtiLogo from '../../../images/logos/rti.svg'
-import LbnlLogo from '../../../images/logos/berkeley-lab.jpg'
-import UnmLogo from '../../../images/logos/univ-new-mexico.png'
-import OsuLogo from '../../../images/logos/oregon-state-univ.svg'
+import RtiLogo from '../../../images/logos/rti-international.svg'
+import LbnlLogo from '../../../images/logos/berkeley-lab.png'
+import UnmLogo from '../../../images/logos/univ-new-mexico.jpeg'
+import OsuLogo from '../../../images/logos/oregon-state-univ.png'
 import JaxLabLogo from '../../../images/logos/jackson-lab.png'
-import MaastrichtLogo from '../../../images/logos/maastricht-univ.svg'
+import MaastrichtLogo from '../../../images/logos/maastricht-univ.png'
 
 const overviewPage = ( props ) => {
+    const logoGrid = {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    }
     const logoContainer = {
-        textAlign: 'center',
-        verticalAlign: 'middle',
+        flex: '1 0 150px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: '0.5rem',
     }
     const logo = {
-        maxWidth: '100px',
+        maxWidth: '200px',
     }
+
     return (
         <Fragment>
 
@@ -34,43 +44,29 @@ const overviewPage = ( props ) => {
                 from <TextLink new to="https://www.renci.org">UNC-CH/RENCI</TextLink>, <TextLink new to="https://www.rti.org/">RTI</TextLink>, <TextLink new to="https://www.lbl.gov/">Lawrence Berkeley National Lab</TextLink>, <TextLink new to="http://www.unm.edu/">University of New Mexico</TextLink>, <TextLink new to="https://oregonstate.edu/">Oregon State University</TextLink>, <TextLink new to="https://www.jax.org/">Jackson Laboratory</TextLink>, and <TextLink new to="https://www.maastrichtuniversity.nl/">Maastricht University</TextLink>. 
             </Paragraph>
             
-            <Grid container spacing={ 32 }>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer">
+            <div style={ logoGrid }>
+                    <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ RenciLogo } alt="RENCI" style={ logo }/>
                     </a>
-                </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer">
-                        <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
-                    </a>
-                </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
                     </a>
-                </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
                     </a>
-                </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
+                    </a>
+                    <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
                     </a>
-                </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
                     </a>
-                </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
-                    <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer">
-                        <img src={ MaastrichtLogo } alt="Maastricht University style={ logo }Logo"/>
+                    <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ MaastrichtLogo } alt="Maastricht University Logo" style={ logo }/>
                     </a>
-                </Grid>
-            </Grid>
+            </div>
             
             <Paragraph>
                 The NIH Data Commons will accelerate biomedical discovery by providing a cloud-based platform where investigators can store, share, access, and compute on digital objects including data, software, workflows, and more.

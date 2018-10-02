@@ -35,13 +35,41 @@ const overviewPage = ( props ) => {
             </Paragraph>
             
             <Grid container spacing={ 32 }>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ RenciLogo } alt="RENCI" style={ logo }/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ RtiLogo } alt="RTI Logo" style={ logo }/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ JaxLabLogo } alt="Jackson Laboratory style={ logo }Logo"/></Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }><img src={ MaastrichtLogo } alt="Maastricht University style={ logo }Logo"/></Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer">
+                        <img src={ RenciLogo } alt="RENCI" style={ logo }/>
+                    </a>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer">
+                        <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
+                    </a>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer">
+                        <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
+                    </a>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer">
+                        <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
+                    </a>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer">
+                        <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
+                    </a>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer">
+                        <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
+                    </a>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 } style={ logoContainer }>
+                    <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer">
+                        <img src={ MaastrichtLogo } alt="Maastricht University style={ logo }Logo"/>
+                    </a>
+                </Grid>
             </Grid>
             
             <Paragraph>

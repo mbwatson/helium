@@ -1,8 +1,15 @@
 {
-  "main.css": "static/css/main.116b7f17.css",
-  "main.css.map": "static/css/main.116b7f17.css.map",
-  "main.js": "static/js/main.5ad86be5.js",
-  "main.js.map": "static/js/main.5ad86be5.js.map",
-  "static/media/dcppc-logo.svg": "static/media/dcppc-logo.397d567b.svg",
-  "static/media/timelapse-stars.jpg": "static/media/timelapse-stars.5f3482a2.jpg"
+  "main.css": "static/css/main.fda9fb9c.css",
+  "main.css.map": "static/css/main.fda9fb9c.css.map",
+  "main.js": "static/js/main.27c7630e.js",
+  "main.js.map": "static/js/main.27c7630e.js.map",
+  "static/media/berkeley-lab.png": "static/media/berkeley-lab.a713e8d4.png",
+  "static/media/dcppc.svg": "static/media/dcppc.397d567b.svg",
+  "static/media/jackson-lab.png": "static/media/jackson-lab.46bf2ab8.png",
+  "static/media/maastricht-univ.png": "static/media/maastricht-univ.0c6a7ec8.png",
+  "static/media/oregon-state-univ.png": "static/media/oregon-state-univ.5683c71d.png",
+  "static/media/renci.png": "static/media/renci.0862929d.png",
+  "static/media/rti-international.svg": "static/media/rti-international.d6b143e5.svg",
+  "static/media/timelapse-stars-circles.png": "static/media/timelapse-stars-circles.4baa12b4.png",
+  "static/media/univ-new-mexico.jpeg": "static/media/univ-new-mexico.806aed21.jpeg"
 }

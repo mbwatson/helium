@@ -20,12 +20,17 @@ const styles = ( theme ) => ({
             flexDirection: 'row',
             alignItems: 'flex-start',
         },
+        '&:hover $avatar': {
+            filter: 'grayscale(75%)',
+        }
     },
     avatar: {
         marginTop: 2 * theme.spacing.unit,
         minWidth: '100px',
         maxWidth: '100px',
         height: 'auto',
+        filter: 'grayscale(100%)',
+        transition: 'filter 250ms'
     },
     details: {
         flex: 3,

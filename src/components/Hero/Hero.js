@@ -2,7 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core'
 
-import heroBackground from '../../images/timelapse-stars.jpg'
+import heroBackground from '../../images/timelapse-stars-circles.png'
 
 const styles = ( theme ) => ({
     root: {

@@ -4,9 +4,13 @@ import { withStyles } from '@material-ui/core/styles';
 import { TextField, Button } from '@material-ui/core';
 
 const styles = theme => ({
-    container: {
-        display: 'flex',
-        flexWrap: 'wrap',
+    root: {
+        width: '100%',
+        maxWidth: '700px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: 3 * theme.spacing.unit,
+        marginBottom: 3 * theme.spacing.unit,
     },
     textField: {
         marginLeft: theme.spacing.unit,
@@ -44,7 +48,7 @@ class ContactForm extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <form className="form-validate">
+            <form className={ classes.root + " form-validate"}>
                 <TextField
                     id="name"
                     label="Name"

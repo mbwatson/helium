@@ -78,8 +78,9 @@ const overviewPage = ( props ) => {
             <Grid container spacing={ 32 }>
                 <Grid item xs={ 12 } sm={ 6 } md={ 8 } style={ { display: 'flex', alignItems: 'center', justifyContent: 'center', } }>
                     <Paragraph>
-                        The initial implementation is a Pilot Phase in which targeted <TextLink new to="https://commonfund.nih.gov/commons/testcasedatasets">high-value data sources</TextLink>
-                        will serve as test cases for the infrastructure to be developed.
+                        The initial implementation is a Pilot Phase in which
+                        targeted <TextLink new to="https://commonfund.nih.gov/commons/testcasedatasets">high-value data sources</TextLink> will
+                        serve as test cases for the infrastructure to be developed.
                         The test datasets come from the <TextLink new to="https://commonfund.nih.gov/gtex">Genotype-Tissue Expression</TextLink> (GTEx) and
                         the <TextLink new to="https://www.nhlbi.nih.gov/science/trans-omics-precision-medicine-topmed-program">Trans-Omics for Precision Medicine</TextLink> (TOPMed) efforts,
                         as well as several Model Organism Databases (MODs).

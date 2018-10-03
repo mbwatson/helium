@@ -33,6 +33,8 @@ const styles = ( theme ) => ({
     },
 })
 
+const HeliumPlus = <span>Helium<strong>Plus</strong></span>
+
 const keyCapabilities = [
     'KC1: Establish community-endorsed guidelines and metrics to govern what it means for digital objects in the Commons to be FAIR.',
     'KC2: Establish global unique identifiers (GUID) for FAIR biomedical digital objects.',
@@ -49,11 +51,11 @@ const dcppcPage = ( props ) => {
     const { classes } = props
     return (
         <Fragment>
-            <Title>HeliumPlus, STAGE, & the DCPPC</Title>
+            <Title>{ HeliumPlus }, STAGE, & the DCPPC</Title>
 
-            <Heading>HeliumPlus</Heading>
+            <Heading>{ HeliumPlus }</Heading>
             <Paragraph>
-                Team <em>HeliumPlus</em>, a subset of Team Helium,
+                Team { HeliumPlus }, a subset of Team Helium,
                 is one of four teams developing a customized organization-specific platform for DataSTAGE
                 (<strong>S</strong>torage, <strong>T</strong>oolspace, <strong>A</strong>ccess and analytics for bi<strong>G</strong> data <strong>E</strong>mpowerment),
                 a project funded by the <TextLink new to="https://www.nhlbi.nih.gov/">National Heart, Lung, and Blood Institute</TextLink> (NHLBI)

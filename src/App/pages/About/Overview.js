@@ -19,6 +19,7 @@ import JaxLabLogo from '../../../images/logos/jackson-lab.png'
 import MaastrichtLogo from '../../../images/logos/maastricht-univ.png'
 
 import DcppcLogo from '../../../images/logos/dcppc-dark.svg'
+import CloudShare from '../../../images/cloudshare.svg'
 
 const overviewPage = ( props ) => {
     const logoGrid = {
@@ -82,7 +83,7 @@ const overviewPage = ( props ) => {
                 investigators can store, share, access, and compute on digital objects including data, software, workflows, and more.
             </Paragraph>
             
-            <GraphicPlaceholder height="200px" text="Cloud-based Architecture"/>
+            <img src={ CloudShare } alt="Cloud-based Architecture" style={{ maxWidth: '100%', }}/>
             
             <Paragraph>
                 The initial implementation is a Pilot Phase in which

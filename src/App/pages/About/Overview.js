@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react'
 
+import { Grid } from '@material-ui/core'
+
 import Title from '../../../components/Typography/Title'
 import Paragraph from '../../../components/Typography/Paragraph'
 import TextLink from '../../../components/Links/TextLink'
@@ -16,7 +18,7 @@ import OsuLogo from '../../../images/logos/oregon-state-univ.png'
 import JaxLabLogo from '../../../images/logos/jackson-lab.png'
 import MaastrichtLogo from '../../../images/logos/maastricht-univ.png'
 
-import DcppcLogo from '../../../images/logos/dcppc.svg'
+import DcppcLogo from '../../../images/logos/dcppc-dark.svg'
 
 const overviewPage = ( props ) => {
     const logoGrid = {
@@ -24,56 +26,60 @@ const overviewPage = ( props ) => {
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        margin: '2rem auto',
+        margin: 0,
     }
     const logoContainer = {
-        flex: '1 0 150px',
+        flex: '1 0 100px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         margin: '0.5rem',
     }
     const logo = {
-        maxWidth: '150px',
+        maxWidth: '100px',
     }
 
     return (
         <Fragment>
 
             <Title>Overview</Title>
-        
-            <Paragraph>
-                Team Helium is composed of data scientists, computer scientists,
-                information technology engineers, bioinformaticians, and biomedical researchers
-                from <TextLink new to="https://www.renci.org">UNC-CH/RENCI</TextLink>, <TextLink new to="https://www.rti.org/">RTI</TextLink>, <TextLink new to="https://www.lbl.gov/">Lawrence Berkeley National Lab</TextLink>, <TextLink new to="http://www.unm.edu/">University of New Mexico</TextLink>, <TextLink new to="https://oregonstate.edu/">Oregon State University</TextLink>, <TextLink new to="https://www.jax.org/">Jackson Laboratory</TextLink>, and <TextLink new to="https://www.maastrichtuniversity.nl/">Maastricht University</TextLink>. 
-            </Paragraph>
             
-            <div style={ logoGrid }>
-                <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ RenciLogo } alt="RENCI" style={ logo }/>
-                </a>
-                <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
-                </a>
-                <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
-                </a>
-                <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
-                </a>
-                <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
-                </a>
-                <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
-                </a>
-                <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                    <img src={ MaastrichtLogo } alt="Maastricht University Logo" style={ logo }/>
-                </a>
-            </div>
+            <Grid container>
+                <Grid item xs={12} md={6}>
+                    <Paragraph>
+                        Team Helium is composed of data scientists, computer scientists,
+                        information technology engineers, bioinformaticians, and biomedical researchers
+                        from <TextLink new to="https://www.renci.org">UNC-CH/RENCI</TextLink>, <TextLink new to="https://www.rti.org/">RTI</TextLink>, <TextLink new to="https://www.lbl.gov/">Lawrence Berkeley National Lab</TextLink>, <TextLink new to="http://www.unm.edu/">University of New Mexico</TextLink>, <TextLink new to="https://oregonstate.edu/">Oregon State University</TextLink>, <TextLink new to="https://www.jax.org/">Jackson Laboratory</TextLink>, and <TextLink new to="https://www.maastrichtuniversity.nl/">Maastricht University</TextLink>. 
+                    </Paragraph>                    
+                </Grid>
+                <Grid item xs={12} md={6} style={ logoGrid }>
+                    <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ RenciLogo } alt="RENCI" style={ logo }/>
+                    </a>
+                    <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
+                    </a>
+                    <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
+                    </a>
+                    <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
+                    </a>
+                    <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
+                    </a>
+                    <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
+                    </a>
+                    <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                        <img src={ MaastrichtLogo } alt="Maastricht University Logo" style={ logo }/>
+                    </a>
+                </Grid>
+            </Grid>
             
             <Paragraph>
-                The NIH Data Commons will accelerate biomedical discovery by providing a cloud-based platform where investigators can store, share, access, and compute on digital objects including data, software, workflows, and more.
+                The NIH Data Commons will accelerate biomedical discovery by providing a cloud-based platform where
+                investigators can store, share, access, and compute on digital objects including data, software, workflows, and more.
             </Paragraph>
             
             <GraphicPlaceholder height="200px" text="Cloud-based Architecture"/>

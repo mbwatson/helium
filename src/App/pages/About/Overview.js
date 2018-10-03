@@ -49,27 +49,27 @@ const overviewPage = ( props ) => {
             </Paragraph>
             
             <div style={ logoGrid }>
-                    <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ RenciLogo } alt="RENCI" style={ logo }/>
-                    </a>
-                    <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
-                    </a>
-                    <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
-                    </a>
-                    <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
-                    </a>
-                    <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
-                    </a>
-                    <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
-                    </a>
-                    <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
-                        <img src={ MaastrichtLogo } alt="Maastricht University Logo" style={ logo }/>
-                    </a>
+                <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ RenciLogo } alt="RENCI" style={ logo }/>
+                </a>
+                <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
+                </a>
+                <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
+                </a>
+                <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
+                </a>
+                <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
+                </a>
+                <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
+                </a>
+                <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
+                    <img src={ MaastrichtLogo } alt="Maastricht University Logo" style={ logo }/>
+                </a>
             </div>
             
             <Paragraph>
@@ -94,7 +94,7 @@ const overviewPage = ( props ) => {
             </Paragraph>
             
             <Float left>
-                <img src={ DcppcLogo }/>
+                <img src={ DcppcLogo } alt="DCPPC Logo"/>
             </Float>
             
             <Paragraph>

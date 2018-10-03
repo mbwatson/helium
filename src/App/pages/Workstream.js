@@ -3,6 +3,9 @@ import { withStyles } from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core'
 
 import Container from '../../components/Layout/Container'
+import Illustration01 from '../../images/illustration01.svg'
+import Illustration02 from '../../images/illustration02.svg'
+import Illustration03 from '../../images/illustration03.svg'
 
 const styles = ( theme ) => ({
     root: {
@@ -10,6 +13,9 @@ const styles = ( theme ) => ({
     },
     step: {
         backgroundRepeat: 'no-repeat',
+        [theme.breakpoints.up('xs')]: { backgroundSize: '50%', },
+        [theme.breakpoints.up('sm')]: { backgroundSize: '75%', },
+        [theme.breakpoints.up('md')]: { backgroundSize: '50%', },
         height: '400px',
         display: 'flex',
         alignItems: 'center',
@@ -36,7 +42,7 @@ const styles = ( theme ) => ({
             backgroundPosition: 'top left',
             [theme.breakpoints.up('xs')]: { 
                 width: '90%',
-                backgroundColor: 'rgba(0, 0, 0, 0.05)',
+                backgroundColor: 'rgba(0, 0, 0, 0.03)',
                 borderRadius: '5px',
                 padding: 2 * theme.spacing.unit,
                 margin: theme.spacing.unit,
@@ -51,7 +57,7 @@ const steps = [
     {
         text: `Each DCPPC/DataSTAGE team outlined a series of milestones in their proposals
             that demonstrate completion of key development tasks to NIH/NHLBI.`,
-        graphic: 'https://picsum.photos/399/299',
+        graphic: Illustration01,
     },
     {
         text: `Teams are held accountable through quarterly reports submitted to the funding source.
@@ -60,7 +66,7 @@ const steps = [
             which may be preventing team members from accomplishing a milestone.
             The Helium and HeliumPlus teams each meet biweekly to
             assess progress and engage in internal reporting.`,
-        graphic: 'https://picsum.photos/400/300',
+        graphic: Illustration02,
     },
     {
         text: `Helium and HeliumPlus are dependent upon one another.
@@ -69,7 +75,7 @@ const steps = [
             Therefore, communication to the Helium team of any issues that arise
             during the course of the DataSTAGE project is crucial to ensure
             informed development of the Helium platform.`,
-        graphic: 'https://picsum.photos/401/301',
+        graphic: Illustration03,
     },
 ]
 

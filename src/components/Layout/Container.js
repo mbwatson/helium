@@ -8,7 +8,7 @@ const styles = ( theme ) => ({
         padding: 2 * theme.spacing.unit,
         transition: 'padding 250ms',
         '@media (min-width: 600px)': {
-            padding: 3 * theme.spacing.unit,
+            padding: 4 * theme.spacing.unit,
         },
     }
 })

@@ -14,18 +14,34 @@ const styles = (theme) => ({
         padding: 4 * theme.spacing.unit,
     },
     panel: {
+        '&:hover $iconColumn': {
+            opacity: '1',
+        },
+        '&:hover $titleColumn': {
+            opacity: '1',
+        },
     },
     iconColumn: {
         flexBasis: '5%',
-        minWidth: '46px',
+        [theme.breakpoints.up('xs')]: {
+            fontSize: '1rem',
+            minWidth: '2rem',
+        },
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '2rem',
+            minWidth: '4rem',
+        },
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        fontSize: '1.1rem',
         color: theme.palette.primary.main,
+        opacity: '0.75',
+        transition: 'opacity 250ms',
     },
     titleColumn: {
         flexBasis: '95%',
+        opacity: '0.75',
+        transition: 'opacity 250ms',
     },
     title: {
         fontSize: theme.typography.pxToRem(20),
@@ -38,7 +54,7 @@ const styles = (theme) => ({
 
 const demosPage = ( props ) => {
     const { classes } = props;
-
+    
     return (
         <Container>
             <Title>Helium Demos</Title>

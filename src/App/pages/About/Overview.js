@@ -89,7 +89,7 @@ const overviewPage = ( props ) => {
                 as well as several Model Organism Databases (MODs).
 
                 
-                Particular attention will be paid to ensuring that the resources produced by the NIH Data Commons Pilot will adhere to FAIR principles.
+                Particular attention will be paid to ensuring that the resources produced by the NIH Data Commons Pilot will adhere to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles.
                 This work is being carried out by the <TextLink new to="https://nihdatacommons.us/">Data Commons Pilot Phase Consortium</TextLink> (DCPPC).
             </Paragraph>
             
@@ -99,7 +99,7 @@ const overviewPage = ( props ) => {
             
             <Paragraph>
                 This vision requires the efforts of a multidisciplinary investigative team with complementary expertise in biomedicine, cloud architecture, software engineering, analytical tools, and data harmonization. Each of eight defined Key Capabilities (KCs) addresses specific challenges faced by scientists working with large-scale biomedical data. The proposed projects are designed so that each KC has unique objectives and deliverables in the form of stand-alone demonstrations and products.
-                Yet together, the KCs form a continuum of insights and approaches that capture the five "V"s of data (Velocity, Volume, Value, Variety, and Veracity) and reflect FAIR principles (Findable, Accessible, Interoperable, and Reusable).
+                Yet together, the KCs form a continuum of insights and approaches that capture the five "V"s of data (Velocity, Volume, Value, Variety, and Veracity) and reflect FAIR data principles.
             </Paragraph>
 
             <Paragraph>

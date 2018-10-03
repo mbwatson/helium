@@ -3,7 +3,7 @@ import React from 'react'
 const float = ( props ) => {
     const style = {
         float: 'none',
-        margin: '1rem',
+        margin: '2rem',
     }
     // Left or right
    if (props.left) {

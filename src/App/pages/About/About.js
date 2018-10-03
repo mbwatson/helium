@@ -36,7 +36,9 @@ const aboutPage = ( props ) => {
                 <Grid item xs={ 12 } sm={ 9 } md={ 10 }>
                     <Switch>
                         <Route exact path='/about/' render={ () => <Redirect to="/about/overview" /> }/>
-                        { submenuLinks.map(link => <Route path={ link.href } component={ link.component }/>) }
+                        {
+                            submenuLinks.map((link, index) => <Route key={ index } path={ link.href } component={ link.component }/>)
+                        }
                         <Route render={ () => <Redirect to="/about/overview" /> } />
                     </Switch>
                 </Grid>

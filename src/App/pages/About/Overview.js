@@ -8,8 +8,6 @@ import TextLink from '../../../components/Links/TextLink'
 
 import Float from '../../../components/Layout/Float'
 
-import GraphicPlaceholder from '../../../devComponents/GraphicPlaceholder'
-
 import RenciLogo from '../../../images/logos/renci.png'
 import RtiLogo from '../../../images/logos/rti-international.svg'
 import LbnlLogo from '../../../images/logos/berkeley-lab.png'
@@ -83,7 +81,7 @@ const overviewPage = ( props ) => {
                 investigators can store, share, access, and compute on digital objects including data, software, workflows, and more.
             </Paragraph>
             
-            <img src={ CloudShare } alt="Cloud-based Architecture" style={{ maxWidth: '100%', }}/>
+            <img src={ CloudShare } alt="Cloud-based Architecture" style={{ maxWidth: '100%', opacity: '0.75', }}/>
             
             <Paragraph>
                 The initial implementation is a Pilot Phase in which

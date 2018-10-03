@@ -5,7 +5,7 @@ import { Grid } from '@material-ui/core';
 
 import Container from '../../../components/Layout/Container'
 import Submenu from '../../../components/Menus/Submenu'
-import { OverviewPage, ObjectivesPage, DcppcPage, TeamPage, PlusPage } from './Pages'
+import { OverviewPage, ObjectivesPage, TeamPage, PlusPage } from './Pages'
 
 const styles = ( theme ) => ({
     root: {
@@ -16,11 +16,10 @@ const aboutPage = ( props ) => {
 
     const { classes } = props
     const submenuLinks = [
-        { href: '/about/overview',      text: 'Overview', },
-        { href: '/about/objectives',    text: 'Objectives', },
-        { href: '/about/team',          text: 'The Team', },
-        { href: '/about/dcppc',         text: 'DCPPC', },
-        { href: '/about/plus',          text: 'HeliumPlus', },
+        { href: '/about/overview',      text: 'Overview',   component: OverviewPage },
+        { href: '/about/objectives',    text: 'Objectives', component: ObjectivesPage },
+        { href: '/about/team',          text: 'The Team',   component: TeamPage },
+        { href: '/about/plus',          text: 'HeliumPlus', component: PlusPage },
     ]
 
     return (
@@ -37,12 +36,8 @@ const aboutPage = ( props ) => {
                 <Grid item xs={ 12 } sm={ 9 } md={ 10 }>
                     <Switch>
                         <Route exact path='/about/' render={ () => <Redirect to="/about/overview" /> }/>
-                        <Route path='/about/overview' component={ OverviewPage }/>
-                        <Route path='/about/objectives' component={ ObjectivesPage }/>
-                        <Route path='/about/dcppc' component={ DcppcPage }/>
-                        <Route path='/about/team' component={ TeamPage }/>
-                        <Route path='/about/plus' component={ PlusPage }/>
-                        <Route component={ OverviewPage } />
+                        { submenuLinks.map(link => <Route path={ link.href } component={ link.component }/>) }
+                        <Route render={ () => <Redirect to="/about/overview" /> } />
                     </Switch>
                 </Grid>
             </Grid>

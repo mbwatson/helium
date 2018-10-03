@@ -9,11 +9,23 @@ import Paragraph from '../../components/Typography/Paragraph'
 
 import demoContent from './demoContent'
 
-const styles = theme => ({
+const styles = (theme) => ({
     root: {
         padding: 4 * theme.spacing.unit,
     },
     panel: {
+    },
+    iconColumn: {
+        flexBasis: '5%',
+        minWidth: '46px',
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        fontSize: '1.1rem',
+        color: theme.palette.primary.main,
+    },
+    titleColumn: {
+        flexBasis: '95%',
     },
     title: {
         fontSize: theme.typography.pxToRem(20),
@@ -35,9 +47,14 @@ const demosPage = ( props ) => {
                 demoContent.map( (demo, index) => {
                     return <ExpansionPanel key={ index } elevation={ 1 } className={ classes.panel }>
                         <ExpansionPanelSummary expandIcon={ <ExpandMoreIcon /> }>
-                            <Typography className={ classes.title }>
-                                { demo.title }
-                            </Typography>
+                            <div className={classes.iconColumn}>
+                                <i className={ demo.icon }></i>
+                            </div>
+                            <div className={classes.titleColumn}>
+                                <Typography className={ classes.title }>
+                                    { demo.title }
+                                </Typography>
+                            </div>
                         </ExpansionPanelSummary>
                         <ExpansionPanelDetails>
                             <Paragraph className={ classes.body }>

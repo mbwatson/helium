@@ -2,6 +2,7 @@ const demoContent = [
     {
         slug: 'workflow-execution',
         title: 'Workflow Execution',
+        icon: 'fab fa-docker',
         body: `
             The user initiates a workspace for computation in the form of a Docker container.
             The workspace provides a set of tools for executing workflows including workflow execution engines modified
@@ -11,6 +12,7 @@ const demoContent = [
     {
         slug: 'user-registration',
         title: 'Register users via a web interface',
+        icon: 'fas fa-fingerprint',
         body: `
             • A new user without an account on CommonsShare goes to the CommonsShare landing page and selects “Sign up now” or alternately selects “join CommonsShare” on the Sign In page.
             • Upon clicking either of these links, the user is presented a form on the web page requesting the user’s First name, Last name, Email address, Username, Organization, Password, Password (again), and a CAPTCHA verification image/phrase. The user fills out the form and selects “Join CommonsShare & start collaborating.”
@@ -22,6 +24,7 @@ const demoContent = [
     {
         slug: 'user-login',
         title: 'Log-in newly registered users from another stack',
+        icon: 'fas fa-key',
         body: `
             The steps are similar as helium demo 2: Register users via a Web interface above recognizing that the authentication of stacks is based on OAuth with credentials common to these stacks.
             • A Client_ID key, Client_Secret key, and Redirect_URL are provided on the RemoteStack.
@@ -35,6 +38,7 @@ const demoContent = [
     {
         slug: ' authentication',
         title: ' Access restricted data based on an authentication system',
+        icon: 'fas fa-key',
         body: `
             • A user authenticates in CommonsShare via an Oauth-based system.
             • Using the steps outlined in the “Upload and annotate novel data to at least one stack via a web interface” herein, the user similarly uploads secure data and creates a resource with Abstract, Keywords, metadata, and GUID.
@@ -47,6 +51,7 @@ const demoContent = [
     {
         slug: 'audit-trail',
         title: 'Displays an audit trail for access to restricted data, including access to the same data from multiple stacks',
+        icon: 'fas fa-share-alt',
         body: `
             • A user authenticates in CommonShare via an Oauth-based system and browses all the data sets for which she has an owner role.
                 • Each dataset is displayed as an icon on which she can right click to display a menu of options. Among these options she selects “Request audit trail” and is prompted with a window that displays logs with detailed information about time of access, user and data operations performed on the data object such permission changes, move, get and put.
@@ -56,13 +61,14 @@ const demoContent = [
     {
         slug: 'upload-and-annotate-data',
         title: 'Upload and annotate novel data to at least one stack via a web interface',
+        icon: 'fas fa-upload',
         body: `
             • A user navigates to the CommonsShare resource landing page.
             • The user selects the appropriate typed resource, e.g. Composite.
             • The user then drags-and-drops one or more novel datasets via the CommonsShare Web User Interface and also enters a title for the resource.
             • The user then selects “Create Resource.”
             • CommonsShare responds back with a new web page indicating the CommonsShare resource with the novel data has been successfully created, and prompts the user to enter an Abstract and Keywords for annotation.
-            • The user selects the edit icon to enter this information and annotate the resource.
+            • The user selects the edit icon t''o enter this information and annotate the resource.
             • The user enters the appropriate text to annotate the novel data in the Abstract text entry box and selects “Save Changes” when complete. The user enters Keywords to add in the Subject area of the same page and selects “Add” for each individual keyword.
             • The user may elect to make the resource Private to share only with trusted colleagues, Discoverable so the public may discover the metadata but not access the novel data itself, or Public that enables the public to both discover and download the novel data.
             • The user may choose from a list of standard licenses, but must pick one.
@@ -72,6 +78,7 @@ const demoContent = [
     {
         slug: 'upload-and-mint-data',
         title: 'Upload data and mint GUIDs on at least one stack to via web interface',
+        icon: 'fas fa-upload',
         body: `
             • A user navigates to the CommonsShare resource landing page.
             • The user selects the appropriate typed resource, e.g. Composite.
@@ -84,6 +91,7 @@ const demoContent = [
     {
         slug: 'full-text-search',
         title: 'Full Text Search',
+        icon: 'fas fa-search',
         body: `
             • The user modifies or creates a data artifact within the commons. As the data is persisted, iRODS notices the action and notifies the indexing pipeline. The pipeline indexes the content.
             Search:
@@ -96,6 +104,7 @@ const demoContent = [
     {
         slug: 'search-for-omics-data',
         title: 'Search over public knowledge resources for omics data for tissue of interest',
+        icon: 'fas fa-search',
         body: `
             • The user is a bioinformatician looking to search public knowledge resources such as public data from
                 data stewards for data about gene expression in a particular tissue, perhaps to explore differences
@@ -121,6 +130,7 @@ const demoContent = [
     {
         slug: 'fairness-assessment',
         title: 'FAIRness Assessment of test data sets',
+        icon: 'fas fa-database',
         body: `
             The first 180 days simulated users (uploading datasets for the first time) will be given preliminary but real-time feedback about their FAIR-TLC score.
             For instance:
@@ -134,6 +144,7 @@ const demoContent = [
     {
         slug: 'fairness-assessment-via-web',
         title: 'Perform a FAIRness assessment of test data sets via a web interface',
+        icon: 'fas fa-database',
         body: `
             A specific example of how the aforementioned Fairness Assessment of a test dataset may be manually assessed and scored via a Data Commons web interface is as follows:
             • A user logs into CommonsShare web interface to perform FAIR-TLC actions demonstrating FAIR-TLC

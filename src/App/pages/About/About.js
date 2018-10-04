@@ -18,8 +18,8 @@ const aboutPage = ( props ) => {
     const submenuLinks = [
         { href: '/about/overview',      text: 'Overview',   component: OverviewPage },
         { href: '/about/objectives',    text: 'Objectives', component: ObjectivesPage },
-        { href: '/about/team',          text: 'The Team',   component: TeamPage },
         { href: '/about/plus',          text: 'HeliumPlus', component: PlusPage },
+        { href: '/about/team',          text: 'The Team',   component: TeamPage },
     ]
 
     return (

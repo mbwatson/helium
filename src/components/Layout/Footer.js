@@ -2,8 +2,8 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import dcppcLogo from '../../images/logos/dcppc.svg'
+import githubLogo from '../../images/logos/github.svg'
 
 const styles = theme => ({
     root: {
@@ -29,6 +29,12 @@ const styles = theme => ({
             },
         },
     },
+    dcppcLogo: {},
+    githubLogo: {
+        width: '20px',
+        height: 'auto',
+        verticalAlign: 'middle',
+    },
 })
 
 const footer = ( props ) => {
@@ -38,12 +44,13 @@ const footer = ( props ) => {
             <Grid container spacing={ 0 } className={ classes.root }>
                 <Grid item xs={ 12 } sm={ 6 } className={ classes.item + " left" }>
                     <a href="https://nihdatacommons.us/" target="_blank" rel="noopener noreferrer">
-                        <img src={ dcppcLogo } alt="DCPPC Logo" />
+                        <img src={ dcppcLogo } alt="DCPPC Logo" className={ classes.dcppcLogo }/>
                     </a>
                 </Grid>
                 <Grid item xs={ 12 } sm={ 6 } className={ classes.item + " right" }>
-                    <a href="https://github.com/dcppc/dcppc-phase1-demos/blob/master/demo-list.rst" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab', 'github'] } />
-                        &nbsp;View our Documentation
+                    <a href="https://github.com/dcppc/dcppc-phase1-demos/blob/master/demo-list.rst" target="_blank" rel="noopener noreferrer">
+                        <img src={ githubLogo } alt="Github Logo" className={ classes.githubLogo }/>
+                        &nbsp; Documentation
                     </a>
                 </Grid>
             </Grid>

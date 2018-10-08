@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 
-import Container from '../../../components/Layout/Container'
 import Profile from '../../../components/Profile/Profile'
 import Title from '../../../components/Typography/Title'
 
@@ -43,17 +42,19 @@ const teamPage = ( props ) => {
     ]
 
     return (
-        <Container className={ classes.root }>
+        <Fragment>
 
             <Title>Meet Team Helium</Title>
             
-            {
-                team.map( (person, index) => {
-                    return <Profile key={ index } { ...person } />
-                })
-            }
+            <div className={ classes.root }>
+                {
+                    team.map( (person, index) => {
+                        return <Profile key={ index } { ...person } />
+                    })
+                }
+            </div>
 
-        </Container>
+        </Fragment>
     )
 }
 

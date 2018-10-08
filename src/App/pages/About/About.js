@@ -8,8 +8,7 @@ import Submenu from '../../../components/Menus/Submenu'
 import { OverviewPage, ObjectivesPage, TeamPage, PlusPage } from './Pages'
 
 const styles = ( theme ) => ({
-    root: {
-    }
+    root: { }
 })
 
 const aboutPage = ( props ) => {

@@ -5,7 +5,7 @@ import { Grid } from '@material-ui/core';
 
 import Container from '../../../components/Layout/Container'
 import Submenu from '../../../components/Menus/Submenu'
-import { OverviewPage, ObjectivesPage, TeamPage, PlusPage } from './Pages'
+import { OverviewPage, ObjectivesPage, WorkstreamPage } from './Pages'
 
 const styles = ( theme ) => ({
     root: { }
@@ -17,8 +17,7 @@ const aboutPage = ( props ) => {
     const submenuLinks = [
         { href: '/about/overview',      text: 'Overview',   component: OverviewPage },
         { href: '/about/objectives',    text: 'Objectives', component: ObjectivesPage },
-        { href: '/about/plus',          text: 'HeliumPlus', component: PlusPage },
-        { href: '/about/team',          text: 'The Team',   component: TeamPage },
+        { href: '/about/workstream',    text: 'Workstream', component: WorkstreamPage },
     ]
 
     return (

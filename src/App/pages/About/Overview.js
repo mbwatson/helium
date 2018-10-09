@@ -16,8 +16,8 @@ import OsuLogo from '../../../images/logos/oregon-state-univ.png'
 import JaxLabLogo from '../../../images/logos/jackson-lab.png'
 import MaastrichtLogo from '../../../images/logos/maastricht-univ.png'
 
+import DataAccessCloud from '../../../images/data-access-cloud.svg'
 import DcppcLogo from '../../../images/logos/dcppc-dark.svg'
-import CloudShare from '../../../images/cloudshare.svg'
 
 const overviewPage = ( props ) => {
     const logoGrid = {
@@ -77,28 +77,32 @@ const overviewPage = ( props ) => {
             </Grid>
             
             <Paragraph>
-                The NIH Data Commons will accelerate biomedical discovery by providing a cloud-based platform where
+                The NIH Data Commons accelerates biomedical discovery by providing a cloud-based platform where
                 investigators can store, share, access, and compute on digital objects including data, software, workflows, and more.
             </Paragraph>
             
-            <img src={ CloudShare } alt="Cloud-based Architecture" style={{ maxWidth: '100%', opacity: '0.75', }}/>
-            
+            <Grid container spacing={ 16 }>
+                <Grid item xs={ 12 } sm={ 12 } md={ 5 } style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <img src={ DataAccessCloud } alt="Cloud-based Architecture" style={{ maxWidth: '100%', }}/>
+                </Grid>
+                <Grid item xs={ 12 } sm={ 12 } md={ 7 } style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Paragraph>
+                        The initial implementation is a Pilot Phase in which
+                        targeted <TextLink new to="https://commonfund.nih.gov/commons/testcasedatasets">high-value data sources</TextLink>
+                        serve as test cases for the infrastructure to be developed.
+                        The test datasets come from the <TextLink new to="https://commonfund.nih.gov/gtex">Genotype-Tissue Expression</TextLink> (GTEx) and
+                        the <TextLink new to="https://www.nhlbi.nih.gov/science/trans-omics-precision-medicine-topmed-program">Trans-Omics for Precision Medicine</TextLink> (TOPMed) efforts,
+                        as well as several Model Organism Databases (MODs).
+                    </Paragraph>
+                </Grid>
+            </Grid>
+        
             <Paragraph>
-                The initial implementation is a Pilot Phase in which
-                targeted <TextLink new to="https://commonfund.nih.gov/commons/testcasedatasets">high-value data sources</TextLink> will
-                serve as test cases for the infrastructure to be developed.
-                
-                
-                The test datasets come from the <TextLink new to="https://commonfund.nih.gov/gtex">Genotype-Tissue Expression</TextLink> (GTEx) and
-                the <TextLink new to="https://www.nhlbi.nih.gov/science/trans-omics-precision-medicine-topmed-program">Trans-Omics for Precision Medicine</TextLink> (TOPMed) efforts,
-                as well as several Model Organism Databases (MODs).
-
-                
-                Particular attention will be paid to ensuring that the resources produced by the NIH Data Commons Pilot will adhere to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles.
+                Particular attention is paid to ensuring that the resources produced by the NIH Data Commons Pilot adhere to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles.
                 This work is being carried out by the <TextLink new to="https://nihdatacommons.us/">Data Commons Pilot Phase Consortium</TextLink> (DCPPC).
             </Paragraph>
             
-            <Float left>
+            <Float right>
                 <img src={ DcppcLogo } alt="DCPPC Logo"/>
             </Float>
             
@@ -108,10 +112,11 @@ const overviewPage = ( props ) => {
             </Paragraph>
 
             <Paragraph>
-                Researchers funded as part of the pilot phase of the <TextLink new to="https://nihdatacommons.us/">DCPPC</TextLink> are iteratively building and testing a series of <TextLink to="dcppc">key capabilities</TextLink> &mdash; fundamental computational units &mdash; needed for the Commons to operate and meet standards for being FAIR &mdash; findable, accessible, interoperable, and reusable.
+                Researchers funded as part of the pilot phase of the DCPPC are iteratively building and testing
+                a series of <TextLink to="/plus">key capabilities</TextLink> &mdash; fundamental computational units &mdash; needed for the Commons to operate and meet standards for being FAIR &mdash; findable, accessible, interoperable, and reusable.
                 Engaging the biomedical research community to develop the Data Commons helps ensure the needs of the research community are met.
                 Each of the three different and high-value test case data sets help in setting policies, processes, and architecture for the Data Commons Pilot Phase with the aim of being able to use all three data sets simultaneously in analyses.
-                The tools and best practices developed by the <TextLink new to="https://nihdatacommons.us/">DCPPC</TextLink> will help researchers discover and interpret connections between human genes and traits and those of model organisms like fruit flies or mice.
+                The tools and best practices developed by the DCPPC will help researchers discover and interpret connections between human genes and traits and those of model organisms like fruit flies or mice.
             </Paragraph>
             
         </Fragment>

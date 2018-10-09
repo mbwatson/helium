@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Layout from '../components/Layout/Layout'
-import { HomePage, WorkstreamPage, ContactPage } from './pages/Pages'
+import { HomePage, PlusPage, TeamPage, ContactPage } from './pages/Pages'
 import AboutPage from './pages/About/About'
 
 import './App.scss'
@@ -10,10 +10,11 @@ import './App.scss'
 class App extends Component {
     
     menuLinks = [
-        { href: '/home',        text: 'Home', },
-        { href: '/about',       text: 'About', },
-        { href: '/workstream',  text: 'Workstream', },
-        { href: '/contact',     text: 'Contact', },
+        { href: '/home',        text: 'HOME', },
+        { href: '/about',       text: 'ABOUT', },
+        { href: '/plus',        text: 'HeliumPlus & STAGE', },
+        { href: '/team',        text: 'THE TEAM', },
+        { href: '/contact',     text: 'CONTACT', },
     ]
 
     render() {
@@ -23,7 +24,8 @@ class App extends Component {
                     <Route exact path='/' render={ () => <Redirect to="/home" /> }/>
                     <Route path='/home' component={ HomePage } />
                     <Route path='/about' component={ AboutPage } />
-                    <Route path='/workstream' component={ WorkstreamPage } />
+                    <Route path='/plus' component={ PlusPage } />
+                    <Route path='/team' component={ TeamPage } />
                     <Route path='/contact' component={ ContactPage } />
                     <Route component={ HomePage } />
                 </Switch>

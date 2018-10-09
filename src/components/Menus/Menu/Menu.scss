@@ -15,7 +15,8 @@ nav {
     opacity: 0.01;
     a {
         padding: 1rem 2rem;
-        text-transform: uppercase;
+        // text-transform: uppercase;
+        // font-variant: small-caps;
         font-weight: bold;
         position: relative;
         &::after {
@@ -66,7 +67,7 @@ body.navOpen {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     header {
         .hamburger {
             transform: translateX(-6em);

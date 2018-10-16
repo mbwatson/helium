@@ -28,14 +28,15 @@ const overviewPage = ( props ) => {
         margin: 0,
     }
     const logoContainer = {
-        flex: '1 0 100px',
+        flex: '1',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        margin: '0.5rem',
+        maxWidth: '180px',
+        margin: '1rem',
     }
     const logo = {
-        maxWidth: '100px',
+        width: '100%',
     }
 
     return (
@@ -43,33 +44,44 @@ const overviewPage = ( props ) => {
 
             <Title>Overview</Title>
             
-            <Grid container>
-                <Grid item xs={12} md={6}>
-                    <Paragraph>
-                        Team Helium is composed of data scientists, computer scientists,
-                        information technology engineers, bioinformaticians, and biomedical researchers
-                        from <TextLink new to="https://www.renci.org">UNC-CH/RENCI</TextLink>, <TextLink new to="https://www.rti.org/">RTI</TextLink>, <TextLink new to="https://www.lbl.gov/">Lawrence Berkeley National Lab</TextLink>, <TextLink new to="http://www.unm.edu/">University of New Mexico</TextLink>, <TextLink new to="https://oregonstate.edu/">Oregon State University</TextLink>, <TextLink new to="https://www.jax.org/">Jackson Laboratory</TextLink>, and <TextLink new to="https://www.maastrichtuniversity.nl/">Maastricht University</TextLink>. 
-                    </Paragraph>                    
-                </Grid>
-                <Grid item xs={12} md={6} style={ logoGrid }>
+            <Paragraph>
+                Team Helium is composed of data scientists, computer scientists,
+                information technology engineers, bioinformaticians, and biomedical researchers
+                from <TextLink new to="https://www.renci.org">UNC-CH/RENCI</TextLink>, <TextLink new to="https://www.rti.org/">RTI</TextLink>, <TextLink new to="https://www.lbl.gov/">Lawrence Berkeley National Lab</TextLink>, <TextLink new to="http://www.unm.edu/">University of New Mexico</TextLink>, <TextLink new to="https://oregonstate.edu/">Oregon State University</TextLink>, <TextLink new to="https://www.jax.org/">Jackson Laboratory</TextLink>, and <TextLink new to="https://www.maastrichtuniversity.nl/">Maastricht University</TextLink>. 
+            </Paragraph>
+
+            <Grid container style={ logoGrid }>
+                <Grid item xs={ 6 } sm={ 3 }>
                     <a href="https://www.renci.org" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ RenciLogo } alt="RENCI" style={ logo }/>
                     </a>
+                </Grid>
+                <Grid item xs={ 6 } sm={ 3 }>
                     <a href="https://www.lbl.gov/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ LbnlLogo } alt="Lawrence Berkeley Laboratory Logo" style={ logo }/>
                     </a>
+                </Grid>
+                <Grid item xs={ 6 } sm={ 3 }>
                     <a href="http://www.unm.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ UnmLogo } alt="University of New Mexico Logo" style={ logo }/>
                     </a>
+                </Grid>
+                <Grid item xs={ 6 } sm={ 3 }>
                     <a href="https://www.rti.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ RtiLogo } alt="RTI Logo" style={ logo }/>
                     </a>
+                </Grid>
+                <Grid item xs={ 6 } sm={ 4 }>
                     <a href="https://oregonstate.edu/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ OsuLogo } alt="Oregon State University Logo" style={ logo }/>
                     </a>
+                </Grid>
+                <Grid item xs={ 6 } sm={ 4 }>
                     <a href="https://www.jax.org/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ JaxLabLogo } alt="Jackson Laboratory Logo" style={ logo }/>
                     </a>
+                </Grid>
+                <Grid item xs={ 6 } sm={ 4 }>
                     <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener noreferrer" style={ logoContainer }>
                         <img src={ MaastrichtLogo } alt="Maastricht University Logo" style={ logo }/>
                     </a>

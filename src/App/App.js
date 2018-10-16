@@ -10,11 +10,10 @@ import './App.scss'
 class App extends Component {
     
     menuLinks = [
-        { href: '/home',        text: 'HOME', },
-        { href: '/about',       text: 'ABOUT', },
+        { href: '/home',        text: 'Home', },
+        { href: '/about',       text: 'About', },
         { href: '/plus',        text: 'HeliumPlus & STAGE', },
-        { href: '/team',        text: 'THE TEAM', },
-        { href: '/contact',     text: 'CONTACT', },
+        { href: '/contact',     text: 'Contact', },
     ]
 
     render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Layout from '../components/Layout/Layout'
-import { HomePage, PlusPage, TeamPage, ContactPage } from './pages/Pages'
+import { HomePage, PlusPage, TeamPage } from './pages/Pages'
 import AboutPage from './pages/About/About'
 
 import './App.scss'
@@ -13,7 +13,6 @@ class App extends Component {
         { href: '/home',        text: 'Home', },
         { href: '/about',       text: 'About', },
         { href: '/plus',        text: 'HeliumPlus & STAGE', },
-        { href: '/contact',     text: 'Contact', },
     ]
 
     render() {
@@ -25,7 +24,6 @@ class App extends Component {
                     <Route path='/about' component={ AboutPage } />
                     <Route path='/plus' component={ PlusPage } />
                     <Route path='/team' component={ TeamPage } />
-                    <Route path='/contact' component={ ContactPage } />
                     <Route component={ HomePage } />
                 </Switch>
             </Layout>
